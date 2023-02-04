@@ -1,0 +1,582 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 69 and seed 8942341988106077478 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 3100624] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/bridge_controller_m2.toolbox/Model_1_d_2_bound_2/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/bridge_controller_m2.toolbox/Model_1_d_2_bound_2/bridge_controller_m2.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module bridge_controller_m2
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-02-03 22:47:59)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-02-03 22:48:00.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 2.0E-17
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-02-03 22:48:00
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 141, col 1 to line 141, col 4 of module bridge_controller_m2>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 142, col 9 to line 152, col 23 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 154, col 1 to line 154, col 5 of module bridge_controller_m2>: 2:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 154, col 13 to line 154, col 24 of module bridge_controller_m2: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 154, col 13 to line 154, col 14 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 155, col 13 to line 155, col 26 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 13 to line 156, col 24 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 157, col 13 to line 157, col 24 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 158, col 13 to line 158, col 32 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 159, col 13 to line 159, col 32 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 13 to line 160, col 50 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 164, col 1 to line 164, col 5 of module bridge_controller_m2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 164, col 13 to line 164, col 24 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 165, col 13 to line 165, col 26 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 166, col 13 to line 166, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 167, col 13 to line 167, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 13 to line 168, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 169, col 13 to line 169, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 170, col 13 to line 170, col 50 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_3 line 174, col 1 to line 174, col 5 of module bridge_controller_m2>: 1:1
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 174, col 13 to line 174, col 24 of module bridge_controller_m2: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 174, col 13 to line 174, col 14 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 175, col 13 to line 175, col 22 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 176, col 13 to line 176, col 22 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 177, col 13 to line 177, col 24 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 178, col 13 to line 178, col 32 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 179, col 13 to line 179, col 32 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 180, col 13 to line 180, col 58 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_4 line 184, col 1 to line 184, col 5 of module bridge_controller_m2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 184, col 13 to line 184, col 24 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 185, col 13 to line 185, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 186, col 13 to line 186, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 187, col 13 to line 187, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 188, col 13 to line 188, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 189, col 13 to line 189, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 190, col 13 to line 190, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 191, col 13 to line 191, col 51 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_5 line 195, col 1 to line 195, col 5 of module bridge_controller_m2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 195, col 13 to line 195, col 24 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 196, col 13 to line 196, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 197, col 13 to line 197, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 198, col 13 to line 198, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 199, col 13 to line 199, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 200, col 13 to line 200, col 67 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_6 line 204, col 1 to line 204, col 5 of module bridge_controller_m2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 204, col 13 to line 204, col 24 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 205, col 13 to line 205, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 206, col 13 to line 206, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 207, col 13 to line 207, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 208, col 13 to line 208, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 209, col 13 to line 209, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 210, col 13 to line 210, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_7 line 214, col 1 to line 214, col 5 of module bridge_controller_m2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 214, col 13 to line 214, col 24 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 215, col 13 to line 215, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 216, col 13 to line 216, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 217, col 13 to line 217, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 218, col 13 to line 218, col 24 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 219, col 13 to line 219, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 220, col 13 to line 220, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 221, col 13 to line 221, col 51 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_8 line 225, col 1 to line 225, col 5 of module bridge_controller_m2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 225, col 13 to line 225, col 24 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 226, col 13 to line 226, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 227, col 13 to line 227, col 22 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 228, col 13 to line 228, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 229, col 13 to line 229, col 32 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 230, col 13 to line 230, col 67 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_9 line 234, col 1 to line 234, col 5 of module bridge_controller_m2>: 8:27
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 234, col 13 to line 234, col 24 of module bridge_controller_m2: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 234, col 13 to line 234, col 14 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 235, col 16 to line 235, col 24 of module bridge_controller_m2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 236, col 33 to line 236, col 69 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 236, col 34 to line 236, col 46 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 236, col 53 to line 236, col 68 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 237, col 38 to line 240, col 53 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 241, col 38 to line 242, col 54 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 243, col 33 to line 243, col 68 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 34 to line 243, col 46 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 243, col 53 to line 243, col 67 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 244, col 41 to line 246, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 247, col 41 to line 247, col 53 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 248, col 38 to line 249, col 54 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 250, col 33 to line 250, col 37 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 251, col 41 to line 253, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 254, col 41 to line 254, col 53 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 255, col 38 to line 256, col 54 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 257, col 33 to line 257, col 59 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 258, col 41 to line 260, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 261, col 41 to line 261, col 53 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 262, col 38 to line 263, col 54 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 264, col 33 to line 264, col 58 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 265, col 41 to line 267, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 268, col 41 to line 268, col 53 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 269, col 38 to line 270, col 54 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 271, col 33 to line 271, col 37 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 272, col 41 to line 274, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 275, col 41 to line 275, col 53 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 276, col 38 to line 277, col 54 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 278, col 33 to line 278, col 91 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 279, col 41 to line 281, col 58 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 282, col 41 to line 282, col 53 of module bridge_controller_m2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 283, col 38 to line 284, col 54 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 285, col 33 to line 285, col 97 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 285, col 33 to line 285, col 78 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 285, col 33 to line 285, col 65 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 285, col 34 to line 285, col 44 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 285, col 53 to line 285, col 63 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 285, col 72 to line 285, col 76 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 285, col 85 to line 285, col 95 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 286, col 38 to line 289, col 53 of module bridge_controller_m2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 290, col 38 to line 291, col 54 of module bridge_controller_m2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 292, col 21 to line 293, col 37 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 294, col 13 to line 294, col 73 of module bridge_controller_m2: 27
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_10 line 296, col 1 to line 296, col 6 of module bridge_controller_m2>: 5:5
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 296, col 14 to line 296, col 26 of module bridge_controller_m2: 22
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 296, col 14 to line 296, col 15 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 297, col 14 to line 297, col 23 of module bridge_controller_m2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 298, col 14 to line 298, col 26 of module bridge_controller_m2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 299, col 14 to line 299, col 78 of module bridge_controller_m2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 302, col 1 to line 302, col 11 of module bridge_controller_m2>: 0:3
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 302, col 16 to line 302, col 26 of module bridge_controller_m2: 20
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 302, col 16 to line 302, col 17 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 302, col 31 to line 302, col 44 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_1 line 314, col 1 to line 314, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 314, col 11 to line 314, col 25 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_2 line 315, col 1 to line 315, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 315, col 11 to line 315, col 25 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_3 line 316, col 1 to line 316, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 316, col 11 to line 316, col 50 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 316, col 11 to line 316, col 23 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 316, col 28 to line 316, col 50 of module bridge_controller_m2: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_4 line 317, col 1 to line 317, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 317, col 11 to line 317, col 46 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_5 line 318, col 1 to line 318, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 318, col 11 to line 318, col 44 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 318, col 14 to line 318, col 44 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 318, col 15 to line 318, col 25 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 318, col 32 to line 318, col 43 of module bridge_controller_m2: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_6 line 319, col 1 to line 319, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 319, col 11 to line 319, col 27 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_7 line 320, col 1 to line 320, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 320, col 11 to line 320, col 27 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_8 line 321, col 1 to line 321, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 321, col 11 to line 321, col 40 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 321, col 12 to line 321, col 22 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 321, col 29 to line 321, col 39 of module bridge_controller_m2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<inv2_9 line 322, col 1 to line 322, col 6 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 322, col 11 to line 322, col 40 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<deadlock_free line 338, col 1 to line 338, col 13 of module bridge_controller_m2>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 338, col 18 to line 339, col 119 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 338, col 18 to line 339, col 92 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 338, col 18 to line 339, col 65 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 338, col 18 to line 339, col 44 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 338, col 18 to line 339, col 23 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 338, col 18 to line 338, col 88 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 338, col 21 to line 338, col 88 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 338, col 21 to line 338, col 64 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 338, col 21 to line 338, col 40 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 326, col 25 to line 326, col 64 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 326, col 28 to line 326, col 64 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 326, col 29 to line 326, col 41 of module bridge_controller_m2: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 326, col 48 to line 326, col 63 of module bridge_controller_m2: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 338, col 45 to line 338, col 64 of module bridge_controller_m2: 11
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 327, col 25 to line 327, col 63 of module bridge_controller_m2: 11
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 327, col 28 to line 327, col 63 of module bridge_controller_m2: 11
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 327, col 29 to line 327, col 41 of module bridge_controller_m2: 11
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 327, col 48 to line 327, col 62 of module bridge_controller_m2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 338, col 69 to line 338, col 88 of module bridge_controller_m2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 339, col 4 to line 339, col 23 of module bridge_controller_m2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 339, col 28 to line 339, col 44 of module bridge_controller_m2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 339, col 49 to line 339, col 65 of module bridge_controller_m2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 339, col 70 to line 339, col 92 of module bridge_controller_m2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(8) at 2023-02-03 22:48:00: 39 states generated (1,764 s/min), 17 distinct states found (769 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+39 states generated, 17 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 8.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1341ms at (2023-02-03 22:48:00)
+@!@!@ENDMSG 2186 @!@!@
