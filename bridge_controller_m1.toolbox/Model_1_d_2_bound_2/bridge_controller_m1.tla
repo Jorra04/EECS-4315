@@ -17,27 +17,27 @@ AXIOM /\ d \in Nat
   
   procedure ML_out(){
     \* Can think of this as either the BAP, or just variable assignment.
-    a := a + 1;
+    ML_out_actions: a := a + 1;
     n := n + 1;
     return;
   }
   
   procedure ML_in(){
     \* Can think of this as either the BAP, or just variable assignment.
-    c:= c - 1;
+    ML_in_actions: c:= c - 1;
     n := n - 1;
     return;
   }
   procedure IL_out(){
     \* Can think of this as either the BAP, or just variable assignment.
-    b := b - 1;
+    IL_out_actions: b := b - 1;
     c := c + 1;
     return;
   }
   
   procedure IL_in(){
     \* Can think of this as either the BAP, or just variable assignment.
-    a := a - 1;
+    IL_in_actions: a := a - 1;
     b := b + 1;
     return;
   }
@@ -45,36 +45,36 @@ AXIOM /\ d \in Nat
   \* Main program
   {
     \* Number of iterations is equal to bound
-    while(i < bound) {
+    loop: while(i < bound) {
         \* We use the "choice" operator to simulate the selection of event execution by some central controller
-        either { 
-            if((a + b < d) /\ (c = 0)) { 
+        choice: either { 
+            ML_out_guard_condition: if((a + b < d) /\ (c = 0)) { 
                 call ML_out(); 
             }; 
         }
         or { 
-            if(c > 0) { 
+            ML_in_guard_condition: if(c > 0) { 
                 call ML_in(); 
             }; 
         } 
         or { 
-            if( (b > 0) /\ (a = 0) ) { 
+            IL_out_guard_condition: if( (b > 0) /\ (a = 0) ) { 
                 call IL_out(); 
             }; 
         }
-        or { 
-            if(a > 0) { 
+         or { 
+            IL_in_guard_condition: if(a > 0) { 
                 call IL_in(); 
             }; 
         };
-        i := i + 1;
+        progress: i := i + 1;
     }
   }
   
 }
 
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "cf0a4652" /\ chksum(tla) = "bead2927")
+\* BEGIN TRANSLATION (chksum(pcal) = "d19b7433" /\ chksum(tla) = "9053d8a5")
 VARIABLES a, b, c, n, i, pc, stack
 
 vars == << a, b, c, n, i, pc, stack >>
@@ -86,87 +86,108 @@ Init == (* Global variables *)
         /\ n = 0
         /\ i = 0
         /\ stack = << >>
-        /\ pc = "Lbl_5"
+        /\ pc = "loop"
 
-Lbl_1 == /\ pc = "Lbl_1"
-         /\ a' = a + 1
-         /\ n' = n + 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << b, c, i >>
+ML_out_actions == /\ pc = "ML_out_actions"
+                  /\ a' = a + 1
+                  /\ n' = n + 1
+                  /\ pc' = Head(stack).pc
+                  /\ stack' = Tail(stack)
+                  /\ UNCHANGED << b, c, i >>
 
-ML_out == Lbl_1
+ML_out == ML_out_actions
 
-Lbl_2 == /\ pc = "Lbl_2"
-         /\ c' = c - 1
-         /\ n' = n - 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, b, i >>
+ML_in_actions == /\ pc = "ML_in_actions"
+                 /\ c' = c - 1
+                 /\ n' = n - 1
+                 /\ pc' = Head(stack).pc
+                 /\ stack' = Tail(stack)
+                 /\ UNCHANGED << a, b, i >>
 
-ML_in == Lbl_2
+ML_in == ML_in_actions
 
-Lbl_3 == /\ pc = "Lbl_3"
-         /\ b' = b - 1
-         /\ c' = c + 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, n, i >>
+IL_out_actions == /\ pc = "IL_out_actions"
+                  /\ b' = b - 1
+                  /\ c' = c + 1
+                  /\ pc' = Head(stack).pc
+                  /\ stack' = Tail(stack)
+                  /\ UNCHANGED << a, n, i >>
 
-IL_out == Lbl_3
+IL_out == IL_out_actions
 
-Lbl_4 == /\ pc = "Lbl_4"
-         /\ a' = a - 1
-         /\ b' = b + 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << c, n, i >>
+IL_in_actions == /\ pc = "IL_in_actions"
+                 /\ a' = a - 1
+                 /\ b' = b + 1
+                 /\ pc' = Head(stack).pc
+                 /\ stack' = Tail(stack)
+                 /\ UNCHANGED << c, n, i >>
 
-IL_in == Lbl_4
+IL_in == IL_in_actions
 
-Lbl_5 == /\ pc = "Lbl_5"
-         /\ IF i < bound
-               THEN /\ \/ /\ IF (a + b < d) /\ (c = 0)
+loop == /\ pc = "loop"
+        /\ IF i < bound
+              THEN /\ pc' = "choice"
+              ELSE /\ pc' = "Done"
+        /\ UNCHANGED << a, b, c, n, i, stack >>
+
+choice == /\ pc = "choice"
+          /\ \/ /\ pc' = "ML_out_guard_condition"
+             \/ /\ pc' = "ML_in_guard_condition"
+             \/ /\ pc' = "IL_out_guard_condition"
+             \/ /\ pc' = "IL_in_guard_condition"
+          /\ UNCHANGED << a, b, c, n, i, stack >>
+
+ML_out_guard_condition == /\ pc = "ML_out_guard_condition"
+                          /\ IF (a + b < d) /\ (c = 0)
                                 THEN /\ stack' = << [ procedure |->  "ML_out",
-                                                      pc        |->  "Lbl_6" ] >>
+                                                      pc        |->  "progress" ] >>
                                                   \o stack
-                                     /\ pc' = "Lbl_1"
-                                ELSE /\ pc' = "Lbl_6"
+                                     /\ pc' = "ML_out_actions"
+                                ELSE /\ pc' = "progress"
                                      /\ stack' = stack
-                       \/ /\ IF c > 0
-                                THEN /\ stack' = << [ procedure |->  "ML_in",
-                                                      pc        |->  "Lbl_6" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_2"
-                                ELSE /\ pc' = "Lbl_6"
-                                     /\ stack' = stack
-                       \/ /\ IF (b > 0) /\ (a = 0)
-                                THEN /\ stack' = << [ procedure |->  "IL_out",
-                                                      pc        |->  "Lbl_6" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_3"
-                                ELSE /\ pc' = "Lbl_6"
-                                     /\ stack' = stack
-                       \/ /\ IF a > 0
-                                THEN /\ stack' = << [ procedure |->  "IL_in",
-                                                      pc        |->  "Lbl_6" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_4"
-                                ELSE /\ pc' = "Lbl_6"
-                                     /\ stack' = stack
-               ELSE /\ pc' = "Done"
-                    /\ stack' = stack
-         /\ UNCHANGED << a, b, c, n, i >>
+                          /\ UNCHANGED << a, b, c, n, i >>
 
-Lbl_6 == /\ pc = "Lbl_6"
-         /\ i' = i + 1
-         /\ pc' = "Lbl_5"
-         /\ UNCHANGED << a, b, c, n, stack >>
+ML_in_guard_condition == /\ pc = "ML_in_guard_condition"
+                         /\ IF c > 0
+                               THEN /\ stack' = << [ procedure |->  "ML_in",
+                                                     pc        |->  "progress" ] >>
+                                                 \o stack
+                                    /\ pc' = "ML_in_actions"
+                               ELSE /\ pc' = "progress"
+                                    /\ stack' = stack
+                         /\ UNCHANGED << a, b, c, n, i >>
+
+IL_out_guard_condition == /\ pc = "IL_out_guard_condition"
+                          /\ IF (b > 0) /\ (a = 0)
+                                THEN /\ stack' = << [ procedure |->  "IL_out",
+                                                      pc        |->  "progress" ] >>
+                                                  \o stack
+                                     /\ pc' = "IL_out_actions"
+                                ELSE /\ pc' = "progress"
+                                     /\ stack' = stack
+                          /\ UNCHANGED << a, b, c, n, i >>
+
+IL_in_guard_condition == /\ pc = "IL_in_guard_condition"
+                         /\ IF a > 0
+                               THEN /\ stack' = << [ procedure |->  "IL_in",
+                                                     pc        |->  "progress" ] >>
+                                                 \o stack
+                                    /\ pc' = "IL_in_actions"
+                               ELSE /\ pc' = "progress"
+                                    /\ stack' = stack
+                         /\ UNCHANGED << a, b, c, n, i >>
+
+progress == /\ pc = "progress"
+            /\ i' = i + 1
+            /\ pc' = "loop"
+            /\ UNCHANGED << a, b, c, n, stack >>
 
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
-Next == ML_out \/ ML_in \/ IL_out \/ IL_in \/ Lbl_5 \/ Lbl_6
+Next == ML_out \/ ML_in \/ IL_out \/ IL_in \/ loop \/ choice
+           \/ ML_out_guard_condition \/ ML_in_guard_condition
+           \/ IL_out_guard_condition \/ IL_in_guard_condition \/ progress
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -183,6 +204,8 @@ inv1_3 == c \in Nat
 inv1_4 == a + b + c = n
 inv1_5 == \/ (a=0) \/ (c=0) 
 
+\* Adding Boolean properties for model checking guard conditions for DLF
+
 ML_out_event_guard == /\ (a + b < d) /\ (c = 0)
 ML_in_event_guard == c > 0
 IL_out_event_guard == /\ (b > 0) /\ (a = 0)
@@ -192,5 +215,5 @@ deadlock_free == \/ ML_out_event_guard \/ ML_in_event_guard \/ IL_out_event_guar
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 03 22:11:24 EST 2023 by jorra04
+\* Last modified Sun Feb 05 19:41:02 EST 2023 by jorra04
 \* Created Fri Feb 03 20:23:32 EST 2023 by jorra04

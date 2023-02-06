@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="configurationName" value="Model_1_d_5_bound_10"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="130.63.96.171"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <intAttribute key="fpIndex" value="116"/>
+    <intAttribute key="maxHeapSize" value="25"/>
+    <stringAttribute key="modelBehaviorInit" value=""/>
+    <stringAttribute key="modelBehaviorNext" value=""/>
+    <stringAttribute key="modelBehaviorSpec" value="Spec"/>
+    <intAttribute key="modelBehaviorSpecType" value="1"/>
+    <stringAttribute key="modelBehaviorVars" value="il_pass, ml_pass, il_tl, a, b, c, i, n, pc, ml_tl, stack"/>
+    <stringAttribute key="modelComments" value=""/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="false"/>
+    <listAttribute key="modelCorrectnessInvariants">
+        <listEntry value="1inv2_1"/>
+        <listEntry value="1inv2_2"/>
+        <listEntry value="1inv2_3"/>
+        <listEntry value="1inv2_4"/>
+        <listEntry value="1inv2_5"/>
+        <listEntry value="1inv2_6"/>
+        <listEntry value="1inv2_7"/>
+        <listEntry value="1inv2_8"/>
+        <listEntry value="1inv2_9"/>
+        <listEntry value="1deadlock_free"/>
+    </listAttribute>
+    <listAttribute key="modelCorrectnessProperties">
+        <listEntry value="0Termination"/>
+    </listAttribute>
+    <intAttribute key="modelEditorOpenTabs" value="8"/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="COLOR;;{red, green};0;0"/>
+        <listEntry value="green;;1;0;0"/>
+        <listEntry value="d;;5;0;0"/>
+        <listEntry value="bound;;10;0;0"/>
+        <listEntry value="red;;0;0;0"/>
+    </listAttribute>
+    <intAttribute key="modelVersion" value="20191005"/>
+    <intAttribute key="numberOfWorkers" value="6"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <stringAttribute key="specName" value="bridge_controller_m2"/>
+    <stringAttribute key="tlcResourcesProfile" value="local custom"/>
+</launchConfiguration>

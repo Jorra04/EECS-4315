@@ -1,0 +1,72 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+5270797329967727715 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"loop\"\n/\\ stack = <<>>",style = filled]
+5270797329967727715 -> 4584553760077743868 [label="",color="2",fontcolor="2"];
+4584553760077743868 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"choice\"\n/\\ stack = <<>>"];
+4584553760077743868 -> 6952250590325337825 [label="",color="3",fontcolor="3"];
+6952250590325337825 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"ML_out_guard\"\n/\\ stack = <<>>"];
+4584553760077743868 -> -7072752847731393168 [label="",color="3",fontcolor="3"];
+-7072752847731393168 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"ML_in_guard\"\n/\\ stack = <<>>"];
+4584553760077743868 -> -8603910064963768456 [label="",color="3",fontcolor="3"];
+-8603910064963768456 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"IL_out_guard\"\n/\\ stack = <<>>"];
+-7072752847731393168 -> 3503453331999244183 [label="",color="4",fontcolor="4"];
+3503453331999244183 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"progress\"\n/\\ stack = <<>>"];
+4584553760077743868 -> 6747467261134638233 [label="",color="3",fontcolor="3"];
+6747467261134638233 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"IL_in_guard\"\n/\\ stack = <<>>"];
+-8603910064963768456 -> 3503453331999244183 [label="",color="5",fontcolor="5"];
+3503453331999244183 -> 8487539717681523116 [label="",color="6",fontcolor="6"];
+8487539717681523116 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"loop\"\n/\\ stack = <<>>"];
+6952250590325337825 -> -6017909044121193924 [label="",color="7",fontcolor="7"];
+-6017909044121193924 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"ML_out_concrete_action\"\n/\\ stack = <<[pc |-> \"progress\", procedure |-> \"ML_out\"]>>"];
+8487539717681523116 -> 3220665589286136146 [label="",color="2",fontcolor="2"];
+3220665589286136146 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"choice\"\n/\\ stack = <<>>"];
+-6017909044121193924 -> 2735611501168281831 [label="",color="8",fontcolor="8"];
+2735611501168281831 [label="/\\ a = 1\n/\\ b = 0\n/\\ c = 0\n/\\ i = 0\n/\\ n = 0\n/\\ pc = \"ML_out_abstract_action\"\n/\\ stack = <<[pc |-> \"progress\", procedure |-> \"ML_out\"]>>"];
+3220665589286136146 -> 914536475020313939 [label="",color="3",fontcolor="3"];
+914536475020313939 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"ML_out_guard\"\n/\\ stack = <<>>"];
+6747467261134638233 -> 3503453331999244183 [label="",color="9",fontcolor="9"];
+3220665589286136146 -> -6375888234808800077 [label="",color="3",fontcolor="3"];
+-6375888234808800077 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"ML_in_guard\"\n/\\ stack = <<>>"];
+914536475020313939 -> -2812963671329899142 [label="",color="7",fontcolor="7"];
+-2812963671329899142 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"ML_out_concrete_action\"\n/\\ stack = <<[pc |-> \"progress\", procedure |-> \"ML_out\"]>>"];
+3220665589286136146 -> -1994381711357311798 [label="",color="3",fontcolor="3"];
+-1994381711357311798 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"IL_out_guard\"\n/\\ stack = <<>>"];
+-2812963671329899142 -> 5871734867227379617 [label="",color="8",fontcolor="8"];
+5871734867227379617 [label="/\\ a = 1\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"ML_out_abstract_action\"\n/\\ stack = <<[pc |-> \"progress\", procedure |-> \"ML_out\"]>>"];
+-1994381711357311798 -> -8674284018158551061 [label="",color="5",fontcolor="5"];
+3220665589286136146 -> 7493728186706263386 [label="",color="3",fontcolor="3"];
+7493728186706263386 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"IL_in_guard\"\n/\\ stack = <<>>"];
+-6375888234808800077 -> -8674284018158551061 [label="",color="4",fontcolor="4"];
+-8674284018158551061 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 1\n/\\ n = 0\n/\\ pc = \"progress\"\n/\\ stack = <<>>"];
+7493728186706263386 -> -8674284018158551061 [label="",color="9",fontcolor="9"];
+-8674284018158551061 -> 3530116823402684413 [label="",color="6",fontcolor="6"];
+3530116823402684413 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 2\n/\\ n = 0\n/\\ pc = \"loop\"\n/\\ stack = <<>>"];
+3530116823402684413 -> 1141337721045808738 [label="",color="2",fontcolor="2"];
+1141337721045808738 [label="/\\ a = 0\n/\\ b = 0\n/\\ c = 0\n/\\ i = 2\n/\\ n = 0\n/\\ pc = \"Done\"\n/\\ stack = <<>>"];
+1141337721045808738 -> 1141337721045808738 [label="",color="10",fontcolor="10"];
+{rank = same; 5270797329967727715;}
+{rank = same; 4584553760077743868;}
+{rank = same; 6747467261134638233;-7072752847731393168;-8603910064963768456;6952250590325337825;}
+{rank = same; -6017909044121193924;3503453331999244183;}
+{rank = same; 8487539717681523116;}
+{rank = same; 3220665589286136146;}
+{rank = same; 7493728186706263386;-6375888234808800077;-1994381711357311798;914536475020313939;}
+{rank = same; -2812963671329899142;-8674284018158551061;}
+{rank = same; 3530116823402684413;}
+{rank = same; 1141337721045808738;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=10]
+loop [label="loop",fillcolor=2]
+IL_in_guard [label="IL_in_guard",fillcolor=9]
+ML_in_guard [label="ML_in_guard",fillcolor=4]
+progress [label="progress",fillcolor=6]
+ML_out_concrete_action [label="ML_out_concrete_action",fillcolor=8]
+choice [label="choice",fillcolor=3]
+IL_out_guard [label="IL_out_guard",fillcolor=5]
+ML_out_guard [label="ML_out_guard",fillcolor=7]
+}}

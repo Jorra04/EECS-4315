@@ -19,7 +19,7 @@ AXIOM /\ d \in Nat
   
   procedure ML_tl_green(){
     \* Can think of this as either the BAP, or just variable assignment.
-    ml_tl := green;
+    ML_tl_green_action: ml_tl := green;
     il_tl := red;
     ml_pass := 0;
     return;
@@ -27,7 +27,7 @@ AXIOM /\ d \in Nat
   
   procedure IL_tl_green(){
     \* Can think of this as either the BAP, or just variable assignment.
-    il_tl := green;
+    IL_tl_green_action: il_tl := green;
     ml_tl := red;
     il_pass := 0;
     return;
@@ -35,7 +35,7 @@ AXIOM /\ d \in Nat
   
   procedure ML_out_1(){
     \* Can think of this as either the BAP, or just variable assignment.
-    a := a + 1;
+    ML_out_1_action: a := a + 1;
     n := n + 1;
     ml_pass := 1;
     return;
@@ -43,7 +43,7 @@ AXIOM /\ d \in Nat
   
   procedure ML_out_2(){
     \* Can think of this as either the BAP, or just variable assignment.
-    a := a + 1;
+    ML_out_2_action: a := a + 1;
     n := n + 1;
     ml_tl := red;
     ml_pass := 1;
@@ -52,14 +52,14 @@ AXIOM /\ d \in Nat
   
   procedure ML_in(){
     \* Can think of this as either the BAP, or just variable assignment.
-    c:= c - 1;
+    ML_in_action: c:= c - 1;
     n := n - 1;
     return;
   }
   
   procedure IL_out_1(){
     \* Can think of this as either the BAP, or just variable assignment.
-    b := b - 1;
+    IL_out_1_action: b := b - 1;
     c := c + 1;
     il_pass := 1;
     return;
@@ -67,7 +67,7 @@ AXIOM /\ d \in Nat
   
   procedure IL_out_2(){
     \* Can think of this as either the BAP, or just variable assignment.
-    b := b - 1;
+    IL_out_2_action: b := b - 1;
     c := c + 1;
     il_pass := 1;
     il_tl := red;
@@ -76,7 +76,7 @@ AXIOM /\ d \in Nat
   
   procedure IL_in(){
     \* Can think of this as either the BAP, or just variable assignment.
-    a := a - 1;
+    IL_in_action: a := a - 1;
     b := b + 1;
     return;
   }
@@ -84,56 +84,56 @@ AXIOM /\ d \in Nat
   \* Main program
   {
     \* Number of iterations is equal to bound
-    while(i < bound) {
+    loop: while(i < bound) {
         \* We use the "choice" operator to simulate the selection of event execution by some central controller
         either { 
-            if((ml_tl = green) /\ ((a + b + 1) /= d)) { 
+            ML_out_1_guard_condition: if((ml_tl = green) /\ ((a + b + 1) /= d)) { 
                 call ML_out_1(); 
             }; 
         }
         or { 
-            if((ml_tl = green) /\ ((a + b + 1) = d)) { 
+            ML_out_2_guard_condition: if((ml_tl = green) /\ ((a + b + 1) = d)) { 
                 call ML_out_2(); 
             }; 
         } 
         or { 
-            if(c > 0) { 
+            ML_in_guard_condition: if(c > 0) { 
                 call ML_in(); 
             }; 
         } 
         or { 
-            if( (il_tl = green) /\ (b /= 1) ) { 
+            IL_out_1_in_guard_condition: if( (il_tl = green) /\ (b /= 1) ) { 
                 call IL_out_1(); 
             }; 
         }
         or { 
-            if( (il_tl = green) /\ (b = 1) ) { 
+            IL_out_2_in_guard_condition: if( (il_tl = green) /\ (b = 1) ) { 
                 call IL_out_2(); 
             }; 
         }
         or { 
-            if(a > 0) { 
+            IL_in_guard_condition: if(a > 0) { 
                 call IL_in(); 
             }; 
         }
         or { 
-            if((il_tl = red ) /\ ( b > 0 ) /\ ( a = 0 ) /\ ( ml_pass = 1 )) { 
+            IL_tl_green_guard_condition: if((il_tl = red ) /\ ( b > 0 ) /\ ( a = 0 ) /\ ( ml_pass = 1 )) { 
                 call IL_tl_green(); 
             }; 
         }
         or { 
-            if((ml_tl = red ) /\ ( (a + b) < d ) /\ ( c = 0 ) /\ ( il_pass = 1 )) { 
+            ML_tl_green_guard_condition: if((ml_tl = red ) /\ ( (a + b) < d ) /\ ( c = 0 ) /\ ( il_pass = 1 )) { 
                 call ML_tl_green(); 
             }; 
         };
-        i := i + 1;
+        progress: i := i + 1;
     }
   }
   
 }
 
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "2531fd4f" /\ chksum(tla) = "2bc7fb5d")
+\* BEGIN TRANSLATION (chksum(pcal) = "3c7b1d29" /\ chksum(tla) = "7b53c501")
 VARIABLES a, b, c, ml_tl, il_tl, ml_pass, il_pass, n, i, pc, stack
 
 vars == << a, b, c, ml_tl, il_tl, ml_pass, il_pass, n, i, pc, stack >>
@@ -149,160 +149,203 @@ Init == (* Global variables *)
         /\ n = 0
         /\ i = 0
         /\ stack = << >>
-        /\ pc = "Lbl_9"
+        /\ pc = "loop"
 
-Lbl_1 == /\ pc = "Lbl_1"
-         /\ ml_tl' = green
-         /\ il_tl' = red
-         /\ ml_pass' = 0
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, b, c, il_pass, n, i >>
+ML_tl_green_action == /\ pc = "ML_tl_green_action"
+                      /\ ml_tl' = green
+                      /\ il_tl' = red
+                      /\ ml_pass' = 0
+                      /\ pc' = Head(stack).pc
+                      /\ stack' = Tail(stack)
+                      /\ UNCHANGED << a, b, c, il_pass, n, i >>
 
-ML_tl_green == Lbl_1
+ML_tl_green == ML_tl_green_action
 
-Lbl_2 == /\ pc = "Lbl_2"
-         /\ il_tl' = green
-         /\ ml_tl' = red
-         /\ il_pass' = 0
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, b, c, ml_pass, n, i >>
+IL_tl_green_action == /\ pc = "IL_tl_green_action"
+                      /\ il_tl' = green
+                      /\ ml_tl' = red
+                      /\ il_pass' = 0
+                      /\ pc' = Head(stack).pc
+                      /\ stack' = Tail(stack)
+                      /\ UNCHANGED << a, b, c, ml_pass, n, i >>
 
-IL_tl_green == Lbl_2
+IL_tl_green == IL_tl_green_action
 
-Lbl_3 == /\ pc = "Lbl_3"
-         /\ a' = a + 1
-         /\ n' = n + 1
-         /\ ml_pass' = 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << b, c, ml_tl, il_tl, il_pass, i >>
+ML_out_1_action == /\ pc = "ML_out_1_action"
+                   /\ a' = a + 1
+                   /\ n' = n + 1
+                   /\ ml_pass' = 1
+                   /\ pc' = Head(stack).pc
+                   /\ stack' = Tail(stack)
+                   /\ UNCHANGED << b, c, ml_tl, il_tl, il_pass, i >>
 
-ML_out_1 == Lbl_3
+ML_out_1 == ML_out_1_action
 
-Lbl_4 == /\ pc = "Lbl_4"
-         /\ a' = a + 1
-         /\ n' = n + 1
-         /\ ml_tl' = red
-         /\ ml_pass' = 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << b, c, il_tl, il_pass, i >>
+ML_out_2_action == /\ pc = "ML_out_2_action"
+                   /\ a' = a + 1
+                   /\ n' = n + 1
+                   /\ ml_tl' = red
+                   /\ ml_pass' = 1
+                   /\ pc' = Head(stack).pc
+                   /\ stack' = Tail(stack)
+                   /\ UNCHANGED << b, c, il_tl, il_pass, i >>
 
-ML_out_2 == Lbl_4
+ML_out_2 == ML_out_2_action
 
-Lbl_5 == /\ pc = "Lbl_5"
-         /\ c' = c - 1
-         /\ n' = n - 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, b, ml_tl, il_tl, ml_pass, il_pass, i >>
+ML_in_action == /\ pc = "ML_in_action"
+                /\ c' = c - 1
+                /\ n' = n - 1
+                /\ pc' = Head(stack).pc
+                /\ stack' = Tail(stack)
+                /\ UNCHANGED << a, b, ml_tl, il_tl, ml_pass, il_pass, i >>
 
-ML_in == Lbl_5
+ML_in == ML_in_action
 
-Lbl_6 == /\ pc = "Lbl_6"
-         /\ b' = b - 1
-         /\ c' = c + 1
-         /\ il_pass' = 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, ml_tl, il_tl, ml_pass, n, i >>
+IL_out_1_action == /\ pc = "IL_out_1_action"
+                   /\ b' = b - 1
+                   /\ c' = c + 1
+                   /\ il_pass' = 1
+                   /\ pc' = Head(stack).pc
+                   /\ stack' = Tail(stack)
+                   /\ UNCHANGED << a, ml_tl, il_tl, ml_pass, n, i >>
 
-IL_out_1 == Lbl_6
+IL_out_1 == IL_out_1_action
 
-Lbl_7 == /\ pc = "Lbl_7"
-         /\ b' = b - 1
-         /\ c' = c + 1
-         /\ il_pass' = 1
-         /\ il_tl' = red
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << a, ml_tl, ml_pass, n, i >>
+IL_out_2_action == /\ pc = "IL_out_2_action"
+                   /\ b' = b - 1
+                   /\ c' = c + 1
+                   /\ il_pass' = 1
+                   /\ il_tl' = red
+                   /\ pc' = Head(stack).pc
+                   /\ stack' = Tail(stack)
+                   /\ UNCHANGED << a, ml_tl, ml_pass, n, i >>
 
-IL_out_2 == Lbl_7
+IL_out_2 == IL_out_2_action
 
-Lbl_8 == /\ pc = "Lbl_8"
-         /\ a' = a - 1
-         /\ b' = b + 1
-         /\ pc' = Head(stack).pc
-         /\ stack' = Tail(stack)
-         /\ UNCHANGED << c, ml_tl, il_tl, ml_pass, il_pass, n, i >>
+IL_in_action == /\ pc = "IL_in_action"
+                /\ a' = a - 1
+                /\ b' = b + 1
+                /\ pc' = Head(stack).pc
+                /\ stack' = Tail(stack)
+                /\ UNCHANGED << c, ml_tl, il_tl, ml_pass, il_pass, n, i >>
 
-IL_in == Lbl_8
+IL_in == IL_in_action
 
-Lbl_9 == /\ pc = "Lbl_9"
-         /\ IF i < bound
-               THEN /\ \/ /\ IF (ml_tl = green) /\ ((a + b + 1) /= d)
-                                THEN /\ stack' = << [ procedure |->  "ML_out_1",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_3"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF (ml_tl = green) /\ ((a + b + 1) = d)
-                                THEN /\ stack' = << [ procedure |->  "ML_out_2",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_4"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF c > 0
-                                THEN /\ stack' = << [ procedure |->  "ML_in",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_5"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF (il_tl = green) /\ (b /= 1)
-                                THEN /\ stack' = << [ procedure |->  "IL_out_1",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_6"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF (il_tl = green) /\ (b = 1)
-                                THEN /\ stack' = << [ procedure |->  "IL_out_2",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_7"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF a > 0
-                                THEN /\ stack' = << [ procedure |->  "IL_in",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_8"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF (il_tl = red ) /\ ( b > 0 ) /\ ( a = 0 ) /\ ( ml_pass = 1 )
-                                THEN /\ stack' = << [ procedure |->  "IL_tl_green",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_2"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-                       \/ /\ IF (ml_tl = red ) /\ ( (a + b) < d ) /\ ( c = 0 ) /\ ( il_pass = 1 )
-                                THEN /\ stack' = << [ procedure |->  "ML_tl_green",
-                                                      pc        |->  "Lbl_10" ] >>
-                                                  \o stack
-                                     /\ pc' = "Lbl_1"
-                                ELSE /\ pc' = "Lbl_10"
-                                     /\ stack' = stack
-               ELSE /\ pc' = "Done"
-                    /\ stack' = stack
-         /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, il_pass, n, i >>
+loop == /\ pc = "loop"
+        /\ IF i < bound
+              THEN /\ \/ /\ pc' = "ML_out_1_guard_condition"
+                      \/ /\ pc' = "ML_out_2_guard_condition"
+                      \/ /\ pc' = "ML_in_guard_condition"
+                      \/ /\ pc' = "IL_out_1_in_guard_condition"
+                      \/ /\ pc' = "IL_out_2_in_guard_condition"
+                      \/ /\ pc' = "IL_in_guard_condition"
+                      \/ /\ pc' = "IL_tl_green_guard_condition"
+                      \/ /\ pc' = "ML_tl_green_guard_condition"
+              ELSE /\ pc' = "Done"
+        /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, il_pass, n, i, stack >>
 
-Lbl_10 == /\ pc = "Lbl_10"
-          /\ i' = i + 1
-          /\ pc' = "Lbl_9"
-          /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, il_pass, n, stack >>
+progress == /\ pc = "progress"
+            /\ i' = i + 1
+            /\ pc' = "loop"
+            /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, il_pass, n, stack >>
+
+ML_out_1_guard_condition == /\ pc = "ML_out_1_guard_condition"
+                            /\ IF (ml_tl = green) /\ ((a + b + 1) /= d)
+                                  THEN /\ stack' = << [ procedure |->  "ML_out_1",
+                                                        pc        |->  "progress" ] >>
+                                                    \o stack
+                                       /\ pc' = "ML_out_1_action"
+                                  ELSE /\ pc' = "progress"
+                                       /\ stack' = stack
+                            /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                            il_pass, n, i >>
+
+ML_out_2_guard_condition == /\ pc = "ML_out_2_guard_condition"
+                            /\ IF (ml_tl = green) /\ ((a + b + 1) = d)
+                                  THEN /\ stack' = << [ procedure |->  "ML_out_2",
+                                                        pc        |->  "progress" ] >>
+                                                    \o stack
+                                       /\ pc' = "ML_out_2_action"
+                                  ELSE /\ pc' = "progress"
+                                       /\ stack' = stack
+                            /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                            il_pass, n, i >>
+
+ML_in_guard_condition == /\ pc = "ML_in_guard_condition"
+                         /\ IF c > 0
+                               THEN /\ stack' = << [ procedure |->  "ML_in",
+                                                     pc        |->  "progress" ] >>
+                                                 \o stack
+                                    /\ pc' = "ML_in_action"
+                               ELSE /\ pc' = "progress"
+                                    /\ stack' = stack
+                         /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                         il_pass, n, i >>
+
+IL_out_1_in_guard_condition == /\ pc = "IL_out_1_in_guard_condition"
+                               /\ IF (il_tl = green) /\ (b /= 1)
+                                     THEN /\ stack' = << [ procedure |->  "IL_out_1",
+                                                           pc        |->  "progress" ] >>
+                                                       \o stack
+                                          /\ pc' = "IL_out_1_action"
+                                     ELSE /\ pc' = "progress"
+                                          /\ stack' = stack
+                               /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                               il_pass, n, i >>
+
+IL_out_2_in_guard_condition == /\ pc = "IL_out_2_in_guard_condition"
+                               /\ IF (il_tl = green) /\ (b = 1)
+                                     THEN /\ stack' = << [ procedure |->  "IL_out_2",
+                                                           pc        |->  "progress" ] >>
+                                                       \o stack
+                                          /\ pc' = "IL_out_2_action"
+                                     ELSE /\ pc' = "progress"
+                                          /\ stack' = stack
+                               /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                               il_pass, n, i >>
+
+IL_in_guard_condition == /\ pc = "IL_in_guard_condition"
+                         /\ IF a > 0
+                               THEN /\ stack' = << [ procedure |->  "IL_in",
+                                                     pc        |->  "progress" ] >>
+                                                 \o stack
+                                    /\ pc' = "IL_in_action"
+                               ELSE /\ pc' = "progress"
+                                    /\ stack' = stack
+                         /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                         il_pass, n, i >>
+
+IL_tl_green_guard_condition == /\ pc = "IL_tl_green_guard_condition"
+                               /\ IF (il_tl = red ) /\ ( b > 0 ) /\ ( a = 0 ) /\ ( ml_pass = 1 )
+                                     THEN /\ stack' = << [ procedure |->  "IL_tl_green",
+                                                           pc        |->  "progress" ] >>
+                                                       \o stack
+                                          /\ pc' = "IL_tl_green_action"
+                                     ELSE /\ pc' = "progress"
+                                          /\ stack' = stack
+                               /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                               il_pass, n, i >>
+
+ML_tl_green_guard_condition == /\ pc = "ML_tl_green_guard_condition"
+                               /\ IF (ml_tl = red ) /\ ( (a + b) < d ) /\ ( c = 0 ) /\ ( il_pass = 1 )
+                                     THEN /\ stack' = << [ procedure |->  "ML_tl_green",
+                                                           pc        |->  "progress" ] >>
+                                                       \o stack
+                                          /\ pc' = "ML_tl_green_action"
+                                     ELSE /\ pc' = "progress"
+                                          /\ stack' = stack
+                               /\ UNCHANGED << a, b, c, ml_tl, il_tl, ml_pass, 
+                                               il_pass, n, i >>
 
 (* Allow infinite stuttering to prevent deadlock on termination. *)
 Terminating == pc = "Done" /\ UNCHANGED vars
 
 Next == ML_tl_green \/ IL_tl_green \/ ML_out_1 \/ ML_out_2 \/ ML_in
-           \/ IL_out_1 \/ IL_out_2 \/ IL_in \/ Lbl_9 \/ Lbl_10
+           \/ IL_out_1 \/ IL_out_2 \/ IL_in \/ loop \/ progress
+           \/ ML_out_1_guard_condition \/ ML_out_2_guard_condition
+           \/ ML_in_guard_condition \/ IL_out_1_in_guard_condition
+           \/ IL_out_2_in_guard_condition \/ IL_in_guard_condition
+           \/ IL_tl_green_guard_condition \/ ML_tl_green_guard_condition
            \/ Terminating
 
 Spec == Init /\ [][Next]_vars
@@ -342,5 +385,5 @@ deadlock_free == \/ ML_out_1_event_guard \/ ML_out_2_event_guard \/ IL_out_1_eve
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Feb 03 22:47:32 EST 2023 by jorra04
+\* Last modified Sun Feb 05 19:52:04 EST 2023 by jorra04
 \* Created Fri Feb 03 21:43:59 EST 2023 by jorra04
