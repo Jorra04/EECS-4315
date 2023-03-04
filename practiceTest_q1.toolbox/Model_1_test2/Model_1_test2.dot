@@ -1,0 +1,36 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-4573093007023712522 [label="/\\ i = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+-4573093007023712522 -> -527900271296002401 [label="",color="2",fontcolor="2"];
+-527900271296002401 [label="/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+-527900271296002401 -> -4050210962383043605 [label="",color="3",fontcolor="3"];
+-4050210962383043605 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1>>"];
+-4050210962383043605 -> 5866126336218255257 [label="",color="3",fontcolor="3"];
+5866126336218255257 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1>>"];
+5866126336218255257 -> -9165002619701825215 [label="",color="3",fontcolor="3"];
+-9165002619701825215 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 3>>"];
+-9165002619701825215 -> -7865860868971265571 [label="",color="3",fontcolor="3"];
+-7865860868971265571 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 3>>"];
+-7865860868971265571 -> 5690203614247602247 [label="",color="3",fontcolor="3"];
+5690203614247602247 [label="/\\ i = 6\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 3, 4>>"];
+5690203614247602247 -> -2230359168461200789 [label="",color="3",fontcolor="3"];
+-2230359168461200789 [label="/\\ i = 6\n/\\ pc = \"Done\"\n/\\ output = <<1, 3, 4>>"];
+-2230359168461200789 -> -2230359168461200789 [label="",color="4",fontcolor="4"];
+{rank = same; -4573093007023712522;}
+{rank = same; -527900271296002401;}
+{rank = same; -4050210962383043605;}
+{rank = same; 5866126336218255257;}
+{rank = same; -9165002619701825215;}
+{rank = same; -7865860868971265571;}
+{rank = same; 5690203614247602247;}
+{rank = same; -2230359168461200789;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

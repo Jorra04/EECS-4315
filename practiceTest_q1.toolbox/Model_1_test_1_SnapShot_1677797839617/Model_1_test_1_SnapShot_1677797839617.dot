@@ -1,0 +1,36 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+2974904102814989318 [label="/\\ i = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+2974904102814989318 -> -3553144750675192145 [label="",color="2",fontcolor="2"];
+-3553144750675192145 [label="/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+-3553144750675192145 -> 2199654431175649046 [label="",color="3",fontcolor="3"];
+2199654431175649046 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1>>"];
+2199654431175649046 -> 1469935289759939444 [label="",color="3",fontcolor="3"];
+1469935289759939444 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2>>"];
+1469935289759939444 -> -6861976040388783362 [label="",color="3",fontcolor="3"];
+-6861976040388783362 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3>>"];
+-6861976040388783362 -> -1463314728766588277 [label="",color="3",fontcolor="3"];
+-1463314728766588277 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3, 4>>"];
+-1463314728766588277 -> -3990779579074284074 [label="",color="3",fontcolor="3"];
+-3990779579074284074 [label="/\\ i = 6\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3, 4>>"];
+-3990779579074284074 -> 2009052140372801212 [label="",color="3",fontcolor="3"];
+2009052140372801212 [label="/\\ i = 7\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3, 4>>"];
+2009052140372801212 -> -2743833444326309151 [label="",color="3",fontcolor="3"];
+-2743833444326309151 [label="/\\ i = 8\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3, 4, 6>>"];
+{rank = same; 2974904102814989318;}
+{rank = same; -3553144750675192145;}
+{rank = same; 2199654431175649046;}
+{rank = same; 1469935289759939444;}
+{rank = same; -6861976040388783362;}
+{rank = same; -1463314728766588277;}
+{rank = same; -3990779579074284074;}
+{rank = same; 2009052140372801212;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}
