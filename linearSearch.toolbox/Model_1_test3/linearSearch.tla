@@ -22,14 +22,24 @@ CONSTANT input, target
         };
         
 
-            assert (\E x \in 1..Len(input) : IF input[x] = target
-            THEN x = index
-            ELSE index = -1);
+\*            assert (\A x \in 1..Len(input) : IF input[x] = target
+\*            THEN x = index
+\*            ELSE index = -1);
+\*assert (\A x \in 1..Len(input) : (input[x] = target) => x = index);
+        (*
+            for all x, if the input[x] = target then: it must be the case that there is no element before it such that input[before] = input[x]
+        *)
+\*        assert (\A x \in 1..Len(input) : 
+\*        IF (input[x] = target)
+\*        THEN (~(\E y \in 1..x -1 : y = x )) /\ (x = target)
+\*        );
+        assert (\A x \in 1..Len(input) : 
+        ((input[x] = target)/\ ( index = x)) => (~(\E y \in (x+1)..Len(input) : input[y] = target)));
     
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "174070bb" /\ chksum(tla) = "a5093226")
+\* BEGIN TRANSLATION (chksum(pcal) = "5bfc4dae" /\ chksum(tla) = "ab38c8c9")
 VARIABLES index, i, pc
 
 vars == << index, i, pc >>
@@ -53,10 +63,9 @@ Lbl_2 == /\ pc = "Lbl_2"
                                /\ index' = index
                     /\ i' = i + 1
                     /\ pc' = "Lbl_2"
-               ELSE /\ Assert(       (\E x \in 1..Len(input) : IF input[x] = target
-                              THEN x = index
-                              ELSE index = -1), 
-                              "Failure of assertion at line 25, column 13.")
+               ELSE /\ Assert(       (\A x \in 1..Len(input) :
+                              ((input[x] = target)/\ ( index = x)) => (~(\E y \in (x+1)..Len(input) : input[y] = target))), 
+                              "Failure of assertion at line 36, column 9.")
                     /\ pc' = "Done"
                     /\ UNCHANGED << index, i >>
 
@@ -74,5 +83,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Mar 03 19:28:11 EST 2023 by jorra04
+\* Last modified Sat Mar 04 23:54:12 EST 2023 by jorra04
 \* Created Fri Mar 03 18:49:44 EST 2023 by jorra04

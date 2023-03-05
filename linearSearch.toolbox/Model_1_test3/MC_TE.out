@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 84 and seed 8816402811735390314 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 150360] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 107 and seed 5845641149036955105 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 147000] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -26,13 +26,13 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-03-03 19:37:15)
+Starting... (2023-03-04 23:54:30)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-03-03 19:37:16.
+Finished computing initial states: 1 distinct state generated at 2023-03-04 23:54:30.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
@@ -41,103 +41,115 @@ Model checking completed. No error has been found.
   calculated (optimistic):  val = 6.0E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-03-03 19:37:16
+The coverage statistics at 2023-03-04 23:54:30
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 37, col 1 to line 37, col 4 of module linearSearch>: 1:1
+<Init line 47, col 1 to line 47, col 4 of module linearSearch>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 38, col 9 to line 40, col 23 of module linearSearch: 1
+  line 48, col 9 to line 50, col 23 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Lbl_1 line 42, col 1 to line 42, col 5 of module linearSearch>: 1:1
+<Lbl_1 line 52, col 1 to line 52, col 5 of module linearSearch>: 1:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 42, col 13 to line 42, col 24 of module linearSearch: 12
+  line 52, col 13 to line 52, col 24 of module linearSearch: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 42, col 13 to line 42, col 14 of module linearSearch: 11
+  |line 52, col 13 to line 52, col 14 of module linearSearch: 11
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 43, col 13 to line 44, col 64 of module linearSearch: 1
+  line 53, col 13 to line 54, col 64 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 45, col 13 to line 45, col 25 of module linearSearch: 1
+  line 55, col 13 to line 55, col 25 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 46, col 13 to line 46, col 36 of module linearSearch: 1
+  line 56, col 13 to line 56, col 36 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Lbl_2 line 48, col 1 to line 48, col 5 of module linearSearch>: 9:9
+<Lbl_2 line 58, col 1 to line 58, col 5 of module linearSearch>: 9:9
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 13 to line 48, col 24 of module linearSearch: 20
+  line 58, col 13 to line 58, col 24 of module linearSearch: 20
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 48, col 13 to line 48, col 14 of module linearSearch: 11
+  |line 58, col 13 to line 58, col 14 of module linearSearch: 11
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 49, col 16 to line 49, col 30 of module linearSearch: 9
+  line 59, col 16 to line 59, col 30 of module linearSearch: 9
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 27 to line 50, col 43 of module linearSearch: 8
+  line 60, col 27 to line 60, col 43 of module linearSearch: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 32 to line 51, col 44 of module linearSearch: 2
+  line 61, col 32 to line 61, col 44 of module linearSearch: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 32 to line 53, col 48 of module linearSearch: 6
+  line 62, col 32 to line 63, col 48 of module linearSearch: 6
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 54, col 24 to line 54, col 33 of module linearSearch: 8
+  line 64, col 24 to line 64, col 33 of module linearSearch: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 55, col 24 to line 55, col 36 of module linearSearch: 8
+  line 65, col 24 to line 65, col 36 of module linearSearch: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 56, col 24 to line 59, col 76 of module linearSearch: 1
+  line 66, col 24 to line 68, col 75 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 56, col 39 to line 58, col 45 of module linearSearch: 1
+  |line 66, col 39 to line 67, col 121 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 56, col 64 to line 58, col 45 of module linearSearch: 4
+  ||line 67, col 31 to line 67, col 121 of module linearSearch: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 56, col 67 to line 56, col 83 of module linearSearch: 4
+  |||line 67, col 32 to line 67, col 65 of module linearSearch: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 57, col 36 to line 57, col 44 of module linearSearch: 2
+  ||||line 67, col 33 to line 67, col 49 of module linearSearch: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 58, col 36 to line 58, col 45 of module linearSearch: 2
+  ||||line 67, col 56 to line 67, col 64 of module linearSearch: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 56, col 48 to line 56, col 60 of module linearSearch: 1
+  |||line 67, col 72 to line 67, col 120 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 60, col 24 to line 60, col 35 of module linearSearch: 1
+  ||||line 67, col 74 to line 67, col 119 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 61, col 24 to line 61, col 47 of module linearSearch: 1
+  |||||line 67, col 103 to line 67, col 119 of module linearSearch: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 67, col 83 to line 67, col 99 of module linearSearch: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 66, col 48 to line 66, col 60 of module linearSearch: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 24 to line 69, col 35 of module linearSearch: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 24 to line 70, col 47 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 64, col 1 to line 64, col 11 of module linearSearch>: 0:1
+<Terminating line 73, col 1 to line 73, col 11 of module linearSearch>: 0:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 64, col 16 to line 64, col 26 of module linearSearch: 12
+  line 73, col 16 to line 73, col 26 of module linearSearch: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 64, col 16 to line 64, col 17 of module linearSearch: 11
+  |line 73, col 16 to line 73, col 17 of module linearSearch: 11
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 64, col 31 to line 64, col 44 of module linearSearch: 1
+  line 73, col 31 to line 73, col 44 of module linearSearch: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(11) at 2023-03-03 19:37:16: 12 states generated (727 s/min), 11 distinct states found (666 ds/min), 0 states left on queue.
+Progress(11) at 2023-03-04 23:54:30: 12 states generated (728 s/min), 11 distinct states found (668 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 12 states generated, 11 distinct states found, 0 states left on queue.
@@ -149,5 +161,5 @@ The depth of the complete state graph search is 11.
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1011ms at (2023-03-03 19:37:16)
+Finished in 1007ms at (2023-03-04 23:54:30)
 @!@!@ENDMSG 2186 @!@!@

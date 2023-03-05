@@ -1,0 +1,36 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+5062107078266241792 [label="/\\ i = 5\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+5062107078266241792 -> 7529106350929708547 [label="",color="2",fontcolor="2"];
+7529106350929708547 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+7529106350929708547 -> -7272767748570030855 [label="",color="3",fontcolor="3"];
+-7272767748570030855 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<5>>"];
+-7272767748570030855 -> 6793325493392499007 [label="",color="3",fontcolor="3"];
+6793325493392499007 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<5, 4>>"];
+6793325493392499007 -> 7744000617418984604 [label="",color="3",fontcolor="3"];
+7744000617418984604 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<5, 4, 3>>"];
+7744000617418984604 -> 6969331298687946824 [label="",color="3",fontcolor="3"];
+6969331298687946824 [label="/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<5, 4, 3, 2>>"];
+6969331298687946824 -> -2587360315323606142 [label="",color="3",fontcolor="3"];
+-2587360315323606142 [label="/\\ i = 0\n/\\ pc = \"Lbl_2\"\n/\\ output = <<5, 4, 3, 2, 1>>"];
+-2587360315323606142 -> 6233399939795759535 [label="",color="3",fontcolor="3"];
+6233399939795759535 [label="/\\ i = 0\n/\\ pc = \"Done\"\n/\\ output = <<5, 4, 3, 2, 1>>"];
+6233399939795759535 -> 6233399939795759535 [label="",color="4",fontcolor="4"];
+{rank = same; 5062107078266241792;}
+{rank = same; 7529106350929708547;}
+{rank = same; -7272767748570030855;}
+{rank = same; 6793325493392499007;}
+{rank = same; 7744000617418984604;}
+{rank = same; 6969331298687946824;}
+{rank = same; -2587360315323606142;}
+{rank = same; 6233399939795759535;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

@@ -1,0 +1,1011 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 87 and seed 137783688481828387 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 143623] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/getAllPairs.toolbox/Model_1_test1/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/getAllPairs.toolbox/Model_1_test1/getAllPairs.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module getAllPairs
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-03-04 23:28:25)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-03-04 23:28:25.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2132:1 @!@!@
+The first argument of Assert evaluated to FALSE; the second argument was:
+"Failure of assertion at line 33, column 8."
+@!@!@ENDMSG 2132 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Lbl_1 line 54, col 10 to line 63, col 50 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_5"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 2
+/\ pc = "Lbl_3"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<1>>
+/\ i = 1
+/\ j = 2
+/\ pc = "Lbl_4"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<1, 2>>
+/\ i = 1
+/\ j = 2
+/\ pc = "Lbl_5"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<1, 2>>
+/\ i = 1
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 3
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<1>>
+/\ i = 1
+/\ j = 3
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<1, 3>>
+/\ i = 1
+/\ j = 3
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<1, 3>>
+/\ i = 1
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 1
+/\ j = 4
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>, <<1, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<1>>
+/\ i = 1
+/\ j = 4
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>, <<1, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<1, 4>>
+/\ i = 1
+/\ j = 4
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<1, 4>>
+/\ i = 1
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<1, 4>>
+/\ i = 2
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <Lbl_1 line 54, col 10 to line 63, col 50 of module getAllPairs>
+/\ currPair = <<1, 4>>
+/\ i = 2
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 2
+/\ j = 1
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<2>>
+/\ i = 2
+/\ j = 1
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<2, 1>>
+/\ i = 2
+/\ j = 1
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<2, 1>>
+/\ i = 2
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 2
+/\ j = 2
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 2
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 2
+/\ j = 3
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<2>>
+/\ i = 2
+/\ j = 3
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<2, 3>>
+/\ i = 2
+/\ j = 3
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+28: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<2, 3>>
+/\ i = 2
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+29: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 2
+/\ j = 4
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+30: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<2>>
+/\ i = 2
+/\ j = 4
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+31: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<2, 4>>
+/\ i = 2
+/\ j = 4
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+32: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<2, 4>>
+/\ i = 2
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+33: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<2, 4>>
+/\ i = 3
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+34: <Lbl_1 line 54, col 10 to line 63, col 50 of module getAllPairs>
+/\ currPair = <<2, 4>>
+/\ i = 3
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+35: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 3
+/\ j = 1
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+36: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<3>>
+/\ i = 3
+/\ j = 1
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+37: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<3, 1>>
+/\ i = 3
+/\ j = 1
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+38: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<3, 1>>
+/\ i = 3
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>, <<3, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+39: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 3
+/\ j = 2
+/\ pc = "Lbl_3"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>, <<3, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+40: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<3>>
+/\ i = 3
+/\ j = 2
+/\ pc = "Lbl_4"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>, <<3, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+41: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<3, 2>>
+/\ i = 3
+/\ j = 2
+/\ pc = "Lbl_5"
+/\ output = <<<<1, 2>>, <<1, 3>>, <<1, 4>>, <<2, 1>>, <<2, 3>>, <<2, 4>>, <<3, 1>>>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+42: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<3, 2>>
+/\ i = 3
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+43: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 3
+/\ j = 3
+/\ pc = "Lbl_5"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+44: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 3
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+45: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 3
+/\ j = 4
+/\ pc = "Lbl_3"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+46: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<3>>
+/\ i = 3
+/\ j = 4
+/\ pc = "Lbl_4"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+47: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<3, 4>>
+/\ i = 3
+/\ j = 4
+/\ pc = "Lbl_5"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+48: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<3, 4>>
+/\ i = 3
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+49: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<3, 4>>
+/\ i = 4
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+50: <Lbl_1 line 54, col 10 to line 63, col 50 of module getAllPairs>
+/\ currPair = <<3, 4>>
+/\ i = 4
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+51: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 4
+/\ j = 1
+/\ pc = "Lbl_3"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+52: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<4>>
+/\ i = 4
+/\ j = 1
+/\ pc = "Lbl_4"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+53: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<4, 1>>
+/\ i = 4
+/\ j = 1
+/\ pc = "Lbl_5"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+54: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<4, 1>>
+/\ i = 4
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+55: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 4
+/\ j = 2
+/\ pc = "Lbl_3"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+56: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<4>>
+/\ i = 4
+/\ j = 2
+/\ pc = "Lbl_4"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+57: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<4, 2>>
+/\ i = 4
+/\ j = 2
+/\ pc = "Lbl_5"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+58: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<4, 2>>
+/\ i = 4
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+59: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 4
+/\ j = 3
+/\ pc = "Lbl_3"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+60: <Lbl_3 line 87, col 10 to line 90, col 40 of module getAllPairs>
+/\ currPair = <<4>>
+/\ i = 4
+/\ j = 3
+/\ pc = "Lbl_4"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+61: <Lbl_4 line 92, col 10 to line 95, col 40 of module getAllPairs>
+/\ currPair = <<4, 3>>
+/\ i = 4
+/\ j = 3
+/\ pc = "Lbl_5"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+62: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<4, 3>>
+/\ i = 4
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>>,
+   <<4, 3>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+63: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 4
+/\ j = 4
+/\ pc = "Lbl_5"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>>,
+   <<4, 3>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+64: <Lbl_5 line 78, col 10 to line 85, col 39 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 4
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>>,
+   <<4, 3>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+65: <Lbl_2 line 65, col 10 to line 76, col 28 of module getAllPairs>
+/\ currPair = <<>>
+/\ i = 5
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = << <<1, 2>>,
+   <<1, 3>>,
+   <<1, 4>>,
+   <<2, 1>>,
+   <<2, 3>>,
+   <<2, 4>>,
+   <<3, 1>>,
+   <<3, 2>>,
+   <<3, 4>>,
+   <<4, 1>>,
+   <<4, 2>>,
+   <<4, 3>> >>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 54, column 10 to line 63, column 50 in getAllPairs
+1. Line 54, column 13 to line 54, column 24 in getAllPairs
+2. Line 55, column 13 to line 62, column 35 in getAllPairs
+3. Line 57, column 21 to line 62, column 35 in getAllPairs
+4. Line 57, column 24 to line 61, column 75 in getAllPairs
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-03-04 23:28:26
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 47, col 1 to line 47, col 4 of module getAllPairs>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 48, col 9 to line 52, col 23 of module getAllPairs: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 54, col 1 to line 54, col 5 of module getAllPairs>: 4:8
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 54, col 13 to line 54, col 24 of module getAllPairs: 138
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 54, col 13 to line 54, col 14 of module getAllPairs: 130
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 55, col 16 to line 55, col 30 of module getAllPairs: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 21 to line 56, col 36 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 57, col 24 to line 61, col 75 of module getAllPairs: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 24 to line 62, col 35 of module getAllPairs: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 13 to line 63, col 50 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 65, col 1 to line 65, col 5 of module getAllPairs>: 20:40
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 13 to line 65, col 24 of module getAllPairs: 164
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 65, col 13 to line 65, col 14 of module getAllPairs: 124
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 66, col 16 to line 66, col 30 of module getAllPairs: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 24 to line 67, col 39 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 27 to line 68, col 32 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 32 to line 69, col 47 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 32 to line 70, col 47 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 24 to line 71, col 43 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 24 to line 72, col 33 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 24 to line 73, col 29 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 24 to line 74, col 36 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 24 to line 75, col 41 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 13 to line 76, col 28 of module getAllPairs: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_5 line 78, col 1 to line 78, col 5 of module getAllPairs>: 16:32
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 13 to line 78, col 24 of module getAllPairs: 136
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 78, col 13 to line 78, col 14 of module getAllPairs: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 79, col 16 to line 79, col 32 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 80, col 21 to line 80, col 57 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 24 to line 81, col 27 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 24 to line 82, col 39 of module getAllPairs: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 13 to line 83, col 22 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 84, col 13 to line 84, col 25 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 13 to line 85, col 39 of module getAllPairs: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_3 line 87, col 1 to line 87, col 5 of module getAllPairs>: 12:24
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 13 to line 87, col 24 of module getAllPairs: 112
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 87, col 13 to line 87, col 14 of module getAllPairs: 88
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 13 to line 88, col 50 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 13 to line 89, col 25 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 13 to line 90, col 40 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_4 line 92, col 1 to line 92, col 5 of module getAllPairs>: 12:24
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 13 to line 92, col 24 of module getAllPairs: 100
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 92, col 13 to line 92, col 14 of module getAllPairs: 76
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 13 to line 93, col 50 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 13 to line 94, col 25 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 13 to line 95, col 40 of module getAllPairs: 24
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 98, col 1 to line 98, col 11 of module getAllPairs>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 16 to line 98, col 26 of module getAllPairs: 64
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 31 to line 98, col 44 of module getAllPairs: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(65) at 2023-03-04 23:28:26: 65 states generated (2,983 s/min), 65 distinct states found (2,983 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+65 states generated, 65 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1316ms at (2023-03-04 23:28:26)
+@!@!@ENDMSG 2186 @!@!@
