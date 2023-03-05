@@ -1,0 +1,54 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-1344320881761155852 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_1\"",style = filled]
+-1344320881761155852 -> 2850027066541604542 [label="",color="2",fontcolor="2"];
+2850027066541604542 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_2\""];
+2850027066541604542 -> 2948414559491997270 [label="",color="3",fontcolor="3"];
+2948414559491997270 [label="/\\ currentSuffix = <<1>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 2\n/\\ pc = \"Lbl_2\""];
+2948414559491997270 -> 7289196696489825817 [label="",color="3",fontcolor="3"];
+7289196696489825817 [label="/\\ currentSuffix = <<1, 2>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 3\n/\\ pc = \"Lbl_2\""];
+7289196696489825817 -> 2995978872394805208 [label="",color="3",fontcolor="3"];
+2995978872394805208 [label="/\\ currentSuffix = <<1, 2, 3>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 4\n/\\ pc = \"Lbl_2\""];
+2995978872394805208 -> -5202180852434797512 [label="",color="3",fontcolor="3"];
+-5202180852434797512 [label="/\\ currentSuffix = <<1, 2, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 2\n/\\ pc = \"Lbl_1\""];
+-5202180852434797512 -> 9014926417347053170 [label="",color="2",fontcolor="2"];
+9014926417347053170 [label="/\\ currentSuffix = <<1, 2, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 2\n/\\ pc = \"Lbl_2\""];
+9014926417347053170 -> -6450690795690495188 [label="",color="3",fontcolor="3"];
+-6450690795690495188 [label="/\\ currentSuffix = <<1, 2, 3, 2>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 3\n/\\ pc = \"Lbl_2\""];
+-6450690795690495188 -> -2008223803322204777 [label="",color="3",fontcolor="3"];
+-2008223803322204777 [label="/\\ currentSuffix = <<1, 2, 3, 2, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 4\n/\\ pc = \"Lbl_2\""];
+-2008223803322204777 -> 4887462047425479725 [label="",color="3",fontcolor="3"];
+4887462047425479725 [label="/\\ currentSuffix = <<1, 2, 3, 2, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<1, 2, 3, 2, 3>>>>\n/\\ i = 3\n/\\ j = 3\n/\\ pc = \"Lbl_1\""];
+4887462047425479725 -> -8572998720663667097 [label="",color="2",fontcolor="2"];
+-8572998720663667097 [label="/\\ currentSuffix = <<1, 2, 3, 2, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<1, 2, 3, 2, 3>>>>\n/\\ i = 3\n/\\ j = 3\n/\\ pc = \"Lbl_2\""];
+-8572998720663667097 -> -378625742324526306 [label="",color="3",fontcolor="3"];
+-378625742324526306 [label="/\\ currentSuffix = <<1, 2, 3, 2, 3, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<1, 2, 3, 2, 3>>>>\n/\\ i = 3\n/\\ j = 4\n/\\ pc = \"Lbl_2\""];
+-378625742324526306 -> 7158743529476526417 [label="",color="3",fontcolor="3"];
+7158743529476526417 [label="/\\ currentSuffix = <<1, 2, 3, 2, 3, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<1, 2, 3, 2, 3>>, <<1, 2, 3, 2, 3, 3>>>>\n/\\ i = 4\n/\\ j = 4\n/\\ pc = \"Lbl_1\""];
+7158743529476526417 -> -1719657590577175486 [label="",color="2",fontcolor="2"];
+-1719657590577175486 [label="/\\ currentSuffix = <<1, 2, 3, 2, 3, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<1, 2, 3, 2, 3>>, <<1, 2, 3, 2, 3, 3>>>>\n/\\ i = 4\n/\\ j = 4\n/\\ pc = \"Done\""];
+-1719657590577175486 -> -1719657590577175486 [label="",color="4",fontcolor="4"];
+{rank = same; -1344320881761155852;}
+{rank = same; 2850027066541604542;}
+{rank = same; 2948414559491997270;}
+{rank = same; 7289196696489825817;}
+{rank = same; 2995978872394805208;}
+{rank = same; -5202180852434797512;}
+{rank = same; 9014926417347053170;}
+{rank = same; -6450690795690495188;}
+{rank = same; -2008223803322204777;}
+{rank = same; 4887462047425479725;}
+{rank = same; -8572998720663667097;}
+{rank = same; -378625742324526306;}
+{rank = same; 7158743529476526417;}
+{rank = same; -1719657590577175486;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

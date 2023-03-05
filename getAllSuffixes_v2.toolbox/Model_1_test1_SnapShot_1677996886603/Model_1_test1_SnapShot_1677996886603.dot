@@ -1,0 +1,48 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-9187537899567454144 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_1\"",style = filled]
+-9187537899567454144 -> -1270144539873153569 [label="",color="2",fontcolor="2"];
+-1270144539873153569 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_2\""];
+-1270144539873153569 -> -5315986801596729925 [label="",color="3",fontcolor="3"];
+-5315986801596729925 [label="/\\ currentSuffix = <<1>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 2\n/\\ pc = \"Lbl_2\""];
+-5315986801596729925 -> 4505169210220470723 [label="",color="3",fontcolor="3"];
+4505169210220470723 [label="/\\ currentSuffix = <<1, 2>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 3\n/\\ pc = \"Lbl_2\""];
+4505169210220470723 -> -6293795959277909116 [label="",color="3",fontcolor="3"];
+-6293795959277909116 [label="/\\ currentSuffix = <<1, 2, 3>>\n/\\ allSuffixes = <<>>\n/\\ i = 1\n/\\ j = 4\n/\\ pc = \"Lbl_2\""];
+-6293795959277909116 -> 1457500335495748659 [label="",color="3",fontcolor="3"];
+1457500335495748659 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 2\n/\\ pc = \"Lbl_1\""];
+1457500335495748659 -> 8798573955265730988 [label="",color="2",fontcolor="2"];
+8798573955265730988 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 2\n/\\ pc = \"Lbl_2\""];
+8798573955265730988 -> -8412782576232877401 [label="",color="3",fontcolor="3"];
+-8412782576232877401 [label="/\\ currentSuffix = <<2>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 3\n/\\ pc = \"Lbl_2\""];
+-8412782576232877401 -> 5507188439699068832 [label="",color="3",fontcolor="3"];
+5507188439699068832 [label="/\\ currentSuffix = <<2, 3>>\n/\\ allSuffixes = <<<<1, 2, 3>>>>\n/\\ i = 2\n/\\ j = 4\n/\\ pc = \"Lbl_2\""];
+5507188439699068832 -> -6812754295492089467 [label="",color="3",fontcolor="3"];
+-6812754295492089467 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>>>\n/\\ i = 3\n/\\ j = 3\n/\\ pc = \"Lbl_1\""];
+-6812754295492089467 -> -3506904842334376934 [label="",color="2",fontcolor="2"];
+-3506904842334376934 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>>>\n/\\ i = 3\n/\\ j = 3\n/\\ pc = \"Lbl_2\""];
+-3506904842334376934 -> 938643645307146327 [label="",color="3",fontcolor="3"];
+938643645307146327 [label="/\\ currentSuffix = <<3>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>>>\n/\\ i = 3\n/\\ j = 4\n/\\ pc = \"Lbl_2\""];
+938643645307146327 -> 7587208314042679097 [label="",color="3",fontcolor="3"];
+7587208314042679097 [label="/\\ currentSuffix = <<>>\n/\\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>, <<3>>>>\n/\\ i = 4\n/\\ j = 4\n/\\ pc = \"Lbl_1\""];
+{rank = same; -9187537899567454144;}
+{rank = same; -1270144539873153569;}
+{rank = same; -5315986801596729925;}
+{rank = same; 4505169210220470723;}
+{rank = same; -6293795959277909116;}
+{rank = same; 1457500335495748659;}
+{rank = same; 8798573955265730988;}
+{rank = same; -8412782576232877401;}
+{rank = same; 5507188439699068832;}
+{rank = same; -6812754295492089467;}
+{rank = same; -3506904842334376934;}
+{rank = same; 938643645307146327;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}
