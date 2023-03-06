@@ -1,0 +1,83 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+7143599113688681266 [label="/\\ seen = <<>>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 1\n/\\ k = 1\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE",style = filled]
+7143599113688681266 -> -8961098228228239899 [label="",color="2",fontcolor="2"];
+-8961098228228239899 [label="/\\ seen = <<\"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 2\n/\\ k = 1\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-8961098228228239899 -> 524498419427725537 [label="",color="3",fontcolor="3"];
+524498419427725537 [label="/\\ seen = <<\"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 2\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+524498419427725537 -> 7295106691213144936 [label="",color="4",fontcolor="4"];
+7295106691213144936 [label="/\\ seen = <<\"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 2\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = TRUE"];
+7295106691213144936 -> -8258015173020166312 [label="",color="4",fontcolor="4"];
+-8258015173020166312 [label="/\\ seen = <<\"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = TRUE"];
+-8258015173020166312 -> 737949225051308300 [label="",color="3",fontcolor="3"];
+737949225051308300 [label="/\\ seen = <<\"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_4\"\n/\\ duplicateFound = FALSE"];
+737949225051308300 -> 2508133408936774804 [label="",color="5",fontcolor="5"];
+2508133408936774804 [label="/\\ seen = <<\"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE"];
+2508133408936774804 -> 1203036097275255220 [label="",color="2",fontcolor="2"];
+1203036097275255220 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+1203036097275255220 -> -4543159327354864520 [label="",color="3",fontcolor="3"];
+-4543159327354864520 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 3\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-4543159327354864520 -> -7757829827561995088 [label="",color="4",fontcolor="4"];
+-7757829827561995088 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-7757829827561995088 -> 8816324869282465441 [label="",color="4",fontcolor="4"];
+8816324869282465441 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 3\n/\\ k = 3\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+8816324869282465441 -> -6972563863912953134 [label="",color="4",fontcolor="4"];
+-6972563863912953134 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 4\n/\\ k = 3\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-6972563863912953134 -> -6813310336463639281 [label="",color="3",fontcolor="3"];
+-6813310336463639281 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 4\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-6813310336463639281 -> -731957885006244409 [label="",color="4",fontcolor="4"];
+-731957885006244409 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 4\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-731957885006244409 -> 2006589138317531094 [label="",color="4",fontcolor="4"];
+2006589138317531094 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 4\n/\\ k = 3\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+2006589138317531094 -> -900693395031215130 [label="",color="4",fontcolor="4"];
+-900693395031215130 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 5\n/\\ k = 3\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-900693395031215130 -> -3616917844132391877 [label="",color="3",fontcolor="3"];
+-3616917844132391877 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 5\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-3616917844132391877 -> -7391548194652820237 [label="",color="4",fontcolor="4"];
+-7391548194652820237 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 5\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-7391548194652820237 -> 8603199143826108130 [label="",color="4",fontcolor="4"];
+8603199143826108130 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 5\n/\\ k = 3\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+8603199143826108130 -> 5063381264451352762 [label="",color="4",fontcolor="4"];
+5063381264451352762 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 2\n/\\ j = 6\n/\\ k = 3\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+5063381264451352762 -> -804895857260202549 [label="",color="3",fontcolor="3"];
+-804895857260202549 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"h\"\n/\\ i = 5\n/\\ j = 6\n/\\ k = 3\n/\\ pc = \"Lbl_4\"\n/\\ duplicateFound = FALSE"];
+-804895857260202549 -> -2582962160832317357 [label="",color="5",fontcolor="5"];
+-2582962160832317357 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"h\"\n/\\ i = 6\n/\\ j = 6\n/\\ k = 3\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE"];
+-2582962160832317357 -> -6504037216183972759 [label="",color="2",fontcolor="2"];
+-6504037216183972759 [label="/\\ seen = <<\"h\", \"h\">>\n/\\ firstNonRepeating = \"h\"\n/\\ i = 6\n/\\ j = 6\n/\\ k = 3\n/\\ pc = \"Done\"\n/\\ duplicateFound = FALSE"];
+-6504037216183972759 -> -6504037216183972759 [label="",color="6",fontcolor="6"];
+{rank = same; 7143599113688681266;}
+{rank = same; -8961098228228239899;}
+{rank = same; 524498419427725537;}
+{rank = same; 7295106691213144936;}
+{rank = same; -8258015173020166312;}
+{rank = same; 737949225051308300;}
+{rank = same; 2508133408936774804;}
+{rank = same; 1203036097275255220;}
+{rank = same; -4543159327354864520;}
+{rank = same; -7757829827561995088;}
+{rank = same; 8816324869282465441;}
+{rank = same; -6972563863912953134;}
+{rank = same; -6813310336463639281;}
+{rank = same; -731957885006244409;}
+{rank = same; 2006589138317531094;}
+{rank = same; -900693395031215130;}
+{rank = same; -3616917844132391877;}
+{rank = same; -7391548194652820237;}
+{rank = same; 8603199143826108130;}
+{rank = same; 5063381264451352762;}
+{rank = same; -804895857260202549;}
+{rank = same; -2582962160832317357;}
+{rank = same; -6504037216183972759;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=6]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+Lbl_4 [label="Lbl_4",fillcolor=5]
+Lbl_3 [label="Lbl_3",fillcolor=4]
+}}

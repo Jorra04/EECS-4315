@@ -1,0 +1,28 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-4804288157517853237 [label="/\\ seen = <<>>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE",style = filled]
+-4804288157517853237 -> -9093866505542527865 [label="",color="2",fontcolor="2"];
+-9093866505542527865 [label="/\\ seen = <<>>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-9093866505542527865 -> 6390190301025986558 [label="",color="3",fontcolor="3"];
+6390190301025986558 [label="/\\ seen = <<\"l\">>\n/\\ firstNonRepeating = \"h\"\n/\\ i = 5\n/\\ j = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+6390190301025986558 -> -8831851280032114867 [label="",color="4",fontcolor="4"];
+-8831851280032114867 [label="/\\ seen = <<\"l\">>\n/\\ firstNonRepeating = \"h\"\n/\\ i = 6\n/\\ j = 1\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE"];
+-8831851280032114867 -> -7681804665754167280 [label="",color="2",fontcolor="2"];
+-7681804665754167280 [label="/\\ seen = <<\"l\">>\n/\\ firstNonRepeating = \"h\"\n/\\ i = 6\n/\\ j = 1\n/\\ pc = \"Done\"\n/\\ duplicateFound = FALSE"];
+-7681804665754167280 -> -7681804665754167280 [label="",color="5",fontcolor="5"];
+{rank = same; -4804288157517853237;}
+{rank = same; -9093866505542527865;}
+{rank = same; 6390190301025986558;}
+{rank = same; -8831851280032114867;}
+{rank = same; -7681804665754167280;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=5]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+Lbl_3 [label="Lbl_3",fillcolor=4]
+}}

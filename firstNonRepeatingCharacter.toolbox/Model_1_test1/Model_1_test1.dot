@@ -1,0 +1,65 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-9046427742847635574 [label="/\\ seen = <<>>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 1\n/\\ k = 1\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE",style = filled]
+-9046427742847635574 -> 3552123314519636529 [label="",color="2",fontcolor="2"];
+3552123314519636529 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 2\n/\\ k = 1\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+3552123314519636529 -> -4745486760681534841 [label="",color="3",fontcolor="3"];
+-4745486760681534841 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 2\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-4745486760681534841 -> -1466742760190984843 [label="",color="4",fontcolor="4"];
+-1466742760190984843 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 2\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-1466742760190984843 -> 6236067959014739646 [label="",color="4",fontcolor="4"];
+6236067959014739646 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+6236067959014739646 -> -8330446916564874758 [label="",color="3",fontcolor="3"];
+-8330446916564874758 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 3\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-8330446916564874758 -> -2745507479514923512 [label="",color="4",fontcolor="4"];
+-2745507479514923512 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 3\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+-2745507479514923512 -> -3942794689714862387 [label="",color="4",fontcolor="4"];
+-3942794689714862387 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 4\n/\\ k = 2\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-3942794689714862387 -> 1416058208461259145 [label="",color="3",fontcolor="3"];
+1416058208461259145 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 4\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+1416058208461259145 -> 5055124161373845115 [label="",color="4",fontcolor="4"];
+5055124161373845115 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 4\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+5055124161373845115 -> -357882943464880720 [label="",color="4",fontcolor="4"];
+-357882943464880720 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 5\n/\\ k = 2\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-357882943464880720 -> 2442696152000824052 [label="",color="3",fontcolor="3"];
+2442696152000824052 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 5\n/\\ k = 1\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+2442696152000824052 -> 8387816735164314886 [label="",color="4",fontcolor="4"];
+8387816735164314886 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 5\n/\\ k = 2\n/\\ pc = \"Lbl_3\"\n/\\ duplicateFound = FALSE"];
+8387816735164314886 -> -5924004185481297865 [label="",color="4",fontcolor="4"];
+-5924004185481297865 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"\"\n/\\ i = 1\n/\\ j = 6\n/\\ k = 2\n/\\ pc = \"Lbl_2\"\n/\\ duplicateFound = FALSE"];
+-5924004185481297865 -> 53319742361114802 [label="",color="3",fontcolor="3"];
+53319742361114802 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"H\"\n/\\ i = 5\n/\\ j = 6\n/\\ k = 2\n/\\ pc = \"Lbl_4\"\n/\\ duplicateFound = FALSE"];
+53319742361114802 -> 4752617205844064081 [label="",color="5",fontcolor="5"];
+4752617205844064081 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"H\"\n/\\ i = 6\n/\\ j = 6\n/\\ k = 2\n/\\ pc = \"Lbl_1\"\n/\\ duplicateFound = FALSE"];
+4752617205844064081 -> 8763735309350815153 [label="",color="2",fontcolor="2"];
+8763735309350815153 [label="/\\ seen = <<\"H\">>\n/\\ firstNonRepeating = \"H\"\n/\\ i = 6\n/\\ j = 6\n/\\ k = 2\n/\\ pc = \"Done\"\n/\\ duplicateFound = FALSE"];
+8763735309350815153 -> 8763735309350815153 [label="",color="6",fontcolor="6"];
+{rank = same; -9046427742847635574;}
+{rank = same; 3552123314519636529;}
+{rank = same; -4745486760681534841;}
+{rank = same; -1466742760190984843;}
+{rank = same; 6236067959014739646;}
+{rank = same; -8330446916564874758;}
+{rank = same; -2745507479514923512;}
+{rank = same; -3942794689714862387;}
+{rank = same; 1416058208461259145;}
+{rank = same; 5055124161373845115;}
+{rank = same; -357882943464880720;}
+{rank = same; 2442696152000824052;}
+{rank = same; 8387816735164314886;}
+{rank = same; -5924004185481297865;}
+{rank = same; 53319742361114802;}
+{rank = same; 4752617205844064081;}
+{rank = same; 8763735309350815153;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=6]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+Lbl_4 [label="Lbl_4",fillcolor=5]
+Lbl_3 [label="Lbl_3",fillcolor=4]
+}}

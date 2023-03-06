@@ -1,0 +1,20 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+5245338611743693135 [label="/\\ i = 1\n/\\ j = 1\n/\\ tail = 4\n/\\ pc = \"Lbl_1\"\n/\\ output = <<1, 2, 3, 4>>\n/\\ numShift = 1",style = filled]
+5245338611743693135 -> 2935698920107725025 [label="",color="2",fontcolor="2"];
+2935698920107725025 [label="/\\ i = 1\n/\\ j = 4\n/\\ tail = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3, 4>>\n/\\ numShift = 1"];
+2935698920107725025 -> -262080542577743834 [label="",color="3",fontcolor="3"];
+-262080542577743834 [label="/\\ i = 1\n/\\ j = 4\n/\\ tail = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 3, 3>>\n/\\ numShift = 1"];
+-262080542577743834 -> -262080542577743834 [label="",color="3",fontcolor="3"];
+{rank = same; 5245338611743693135;}
+{rank = same; 2935698920107725025;}
+{rank = same; -262080542577743834;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

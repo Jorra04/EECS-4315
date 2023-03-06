@@ -1,0 +1,45 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+6914465691663463761 [label="/\\ i = 1\n/\\ pc = \"Lbl_1\"\n/\\ max = 1\n/\\ output = -99999",style = filled]
+6914465691663463761 -> -2699871024948326286 [label="",color="2",fontcolor="2"];
+-2699871024948326286 [label="/\\ i = 2\n/\\ pc = \"Lbl_1\"\n/\\ max = 1\n/\\ output = -99999"];
+-2699871024948326286 -> 2413783410589173804 [label="",color="2",fontcolor="2"];
+2413783410589173804 [label="/\\ i = 3\n/\\ pc = \"Lbl_1\"\n/\\ max = 2\n/\\ output = -99999"];
+2413783410589173804 -> -2129652043700300182 [label="",color="2",fontcolor="2"];
+-2129652043700300182 [label="/\\ i = 4\n/\\ pc = \"Lbl_1\"\n/\\ max = 3\n/\\ output = -99999"];
+-2129652043700300182 -> -5489179782303462285 [label="",color="2",fontcolor="2"];
+-5489179782303462285 [label="/\\ i = 5\n/\\ pc = \"Lbl_1\"\n/\\ max = 4\n/\\ output = -99999"];
+-5489179782303462285 -> 5096791696561174573 [label="",color="2",fontcolor="2"];
+5096791696561174573 [label="/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ max = 4\n/\\ output = -99999"];
+5096791696561174573 -> -7594256584474036753 [label="",color="3",fontcolor="3"];
+-7594256584474036753 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ max = 4\n/\\ output = 1"];
+-7594256584474036753 -> -6810478305630547371 [label="",color="3",fontcolor="3"];
+-6810478305630547371 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ max = 4\n/\\ output = 2"];
+-6810478305630547371 -> -5733783383899627992 [label="",color="3",fontcolor="3"];
+-5733783383899627992 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ max = 4\n/\\ output = 3"];
+-5733783383899627992 -> 6532907338785752494 [label="",color="3",fontcolor="3"];
+6532907338785752494 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ max = 4\n/\\ output = 3"];
+6532907338785752494 -> 3655625459442838251 [label="",color="3",fontcolor="3"];
+3655625459442838251 [label="/\\ i = 5\n/\\ pc = \"Done\"\n/\\ max = 4\n/\\ output = 3"];
+3655625459442838251 -> 3655625459442838251 [label="",color="4",fontcolor="4"];
+{rank = same; 6914465691663463761;}
+{rank = same; -2699871024948326286;}
+{rank = same; 2413783410589173804;}
+{rank = same; -2129652043700300182;}
+{rank = same; -5489179782303462285;}
+{rank = same; 5096791696561174573;}
+{rank = same; -7594256584474036753;}
+{rank = same; -6810478305630547371;}
+{rank = same; -5733783383899627992;}
+{rank = same; 6532907338785752494;}
+{rank = same; 3655625459442838251;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}
