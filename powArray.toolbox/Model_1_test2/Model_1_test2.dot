@@ -1,0 +1,36 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+7047904761622392796 [label="/\\ i = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+7047904761622392796 -> 1337996600195547501 [label="",color="2",fontcolor="2"];
+1337996600195547501 [label="/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+1337996600195547501 -> 6326332990366102420 [label="",color="3",fontcolor="3"];
+6326332990366102420 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<0>>"];
+6326332990366102420 -> 8593073285853884651 [label="",color="3",fontcolor="3"];
+8593073285853884651 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<0, 8>>"];
+8593073285853884651 -> -1566759452262193711 [label="",color="3",fontcolor="3"];
+-1566759452262193711 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<0, 8, 27>>"];
+-1566759452262193711 -> 5369580916245945243 [label="",color="3",fontcolor="3"];
+5369580916245945243 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ output = <<0, 8, 27, 64>>"];
+5369580916245945243 -> 814390769472626616 [label="",color="3",fontcolor="3"];
+814390769472626616 [label="/\\ i = 6\n/\\ pc = \"Lbl_2\"\n/\\ output = <<0, 8, 27, 64, 343>>"];
+814390769472626616 -> 3354182043853449348 [label="",color="3",fontcolor="3"];
+3354182043853449348 [label="/\\ i = 6\n/\\ pc = \"Done\"\n/\\ output = <<0, 8, 27, 64, 343>>"];
+3354182043853449348 -> 3354182043853449348 [label="",color="4",fontcolor="4"];
+{rank = same; 7047904761622392796;}
+{rank = same; 1337996600195547501;}
+{rank = same; 6326332990366102420;}
+{rank = same; 8593073285853884651;}
+{rank = same; -1566759452262193711;}
+{rank = same; 5369580916245945243;}
+{rank = same; 814390769472626616;}
+{rank = same; 3354182043853449348;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

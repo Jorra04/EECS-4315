@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 8 and seed -6555862421277922923 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 266088] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 82 and seed -4753952728040246209 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 367874] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -26,122 +26,122 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-03-05 22:40:39)
+Starting... (2023-03-06 13:06:34)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-03-05 22:40:40.
+Finished computing initial states: 1 distinct state generated at 2023-03-06 13:06:35.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 2.0E-18
+  calculated (optimistic):  val = 9.2E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-03-05 22:40:40
+The coverage statistics at 2023-03-06 13:06:35
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 42, col 1 to line 42, col 4 of module getRightShifts_v2>: 1:1
+<Init line 38, col 1 to line 38, col 4 of module getRightShifts_v2>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 43, col 9 to line 48, col 23 of module getRightShifts_v2: 1
+  line 39, col 9 to line 44, col 23 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Lbl_1 line 50, col 1 to line 50, col 5 of module getRightShifts_v2>: 8:8
+<Lbl_1 line 46, col 1 to line 46, col 5 of module getRightShifts_v2>: 4:4
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 50, col 13 to line 50, col 24 of module getRightShifts_v2: 45
+  line 46, col 13 to line 46, col 24 of module getRightShifts_v2: 21
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 50, col 13 to line 50, col 14 of module getRightShifts_v2: 37
+  |line 46, col 13 to line 46, col 14 of module getRightShifts_v2: 17
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 51, col 16 to line 51, col 21 of module getRightShifts_v2: 8
+  line 47, col 16 to line 47, col 28 of module getRightShifts_v2: 4
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 21 to line 54, col 36 of module getRightShifts_v2: 7
+  line 48, col 21 to line 50, col 36 of module getRightShifts_v2: 3
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 55, col 24 to line 60, col 75 of module getRightShifts_v2: 1
+  line 51, col 24 to line 56, col 75 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 55, col 39 to line 58, col 83 of module getRightShifts_v2: 1
+  |line 51, col 39 to line 54, col 83 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 56, col 31 to line 58, col 83 of module getRightShifts_v2: 4
+  ||line 52, col 31 to line 54, col 83 of module getRightShifts_v2: 4
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 56, col 35 to line 56, col 65 of module getRightShifts_v2: 4
+  |||line 52, col 35 to line 52, col 65 of module getRightShifts_v2: 4
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 57, col 36 to line 57, col 65 of module getRightShifts_v2: 1
+  |||line 53, col 36 to line 53, col 65 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 58, col 37 to line 58, col 82 of module getRightShifts_v2: 3
+  |||line 54, col 37 to line 54, col 82 of module getRightShifts_v2: 3
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 55, col 48 to line 55, col 60 of module getRightShifts_v2: 1
+  ||line 51, col 48 to line 51, col 60 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 61, col 24 to line 61, col 35 of module getRightShifts_v2: 1
+  line 57, col 24 to line 57, col 35 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 62, col 24 to line 62, col 46 of module getRightShifts_v2: 1
+  line 58, col 24 to line 58, col 46 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 63, col 13 to line 63, col 47 of module getRightShifts_v2: 8
+  line 59, col 13 to line 59, col 47 of module getRightShifts_v2: 4
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Lbl_2 line 65, col 1 to line 65, col 5 of module getRightShifts_v2>: 28:28
+<Lbl_2 line 61, col 1 to line 61, col 5 of module getRightShifts_v2>: 12:12
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 65, col 13 to line 65, col 24 of module getRightShifts_v2: 65
+  line 61, col 13 to line 61, col 24 of module getRightShifts_v2: 29
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 65, col 13 to line 65, col 14 of module getRightShifts_v2: 37
+  |line 61, col 13 to line 61, col 14 of module getRightShifts_v2: 17
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 66, col 16 to line 66, col 20 of module getRightShifts_v2: 28
+  line 62, col 16 to line 62, col 20 of module getRightShifts_v2: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 67, col 21 to line 70, col 29 of module getRightShifts_v2: 21
+  line 63, col 21 to line 66, col 29 of module getRightShifts_v2: 9
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 71, col 21 to line 74, col 29 of module getRightShifts_v2: 7
+  line 67, col 21 to line 70, col 29 of module getRightShifts_v2: 3
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 13 to line 75, col 42 of module getRightShifts_v2: 28
+  line 71, col 13 to line 71, col 42 of module getRightShifts_v2: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 78, col 1 to line 78, col 11 of module getRightShifts_v2>: 0:1
+<Terminating line 74, col 1 to line 74, col 11 of module getRightShifts_v2>: 0:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 78, col 16 to line 78, col 26 of module getRightShifts_v2: 38
+  line 74, col 16 to line 74, col 26 of module getRightShifts_v2: 18
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 78, col 16 to line 78, col 17 of module getRightShifts_v2: 37
+  |line 74, col 16 to line 74, col 17 of module getRightShifts_v2: 17
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 78, col 31 to line 78, col 44 of module getRightShifts_v2: 1
+  line 74, col 31 to line 74, col 44 of module getRightShifts_v2: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(37) at 2023-03-05 22:40:40: 38 states generated (1,855 s/min), 37 distinct states found (1,806 ds/min), 0 states left on queue.
+Progress(17) at 2023-03-06 13:06:35: 18 states generated (876 s/min), 17 distinct states found (827 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-38 states generated, 37 distinct states found, 0 states left on queue.
+18 states generated, 17 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 37.
+The depth of the complete state graph search is 17.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1249ms at (2023-03-05 22:40:40)
+Finished in 1248ms at (2023-03-06 13:06:35)
 @!@!@ENDMSG 2186 @!@!@

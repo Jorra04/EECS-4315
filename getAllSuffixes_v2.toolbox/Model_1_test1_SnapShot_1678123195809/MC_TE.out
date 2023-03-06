@@ -1,0 +1,264 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 34 and seed 8017426638340518931 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 361463] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/getAllSuffixes_v2.toolbox/Model_1_test1/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/getAllSuffixes_v2.toolbox/Model_1_test1/getAllSuffixes_v2.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module getAllSuffixes_v2
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-03-06 12:19:54)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-03-06 12:19:54.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2132:1 @!@!@
+The first argument of Assert evaluated to FALSE; the second argument was:
+"Failure of assertion at line 31, column 9."
+@!@!@ENDMSG 2132 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<>>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_1"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Lbl_1 line 50, col 10 to line 59, col 60 of module getAllSuffixes_v2>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<>>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<1>>
+/\ allSuffixes = <<>>
+/\ i = 1
+/\ j = 2
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<1, 2>>
+/\ allSuffixes = <<>>
+/\ i = 1
+/\ j = 3
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<1, 2, 3>>
+/\ allSuffixes = <<>>
+/\ i = 1
+/\ j = 4
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<<<1, 2, 3>>>>
+/\ i = 2
+/\ j = 2
+/\ pc = "Lbl_1"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Lbl_1 line 50, col 10 to line 59, col 60 of module getAllSuffixes_v2>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<<<1, 2, 3>>>>
+/\ i = 2
+/\ j = 2
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<2>>
+/\ allSuffixes = <<<<1, 2, 3>>>>
+/\ i = 2
+/\ j = 3
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<2, 3>>
+/\ allSuffixes = <<<<1, 2, 3>>>>
+/\ i = 2
+/\ j = 4
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>>>
+/\ i = 3
+/\ j = 3
+/\ pc = "Lbl_1"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Lbl_1 line 50, col 10 to line 59, col 60 of module getAllSuffixes_v2>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>>>
+/\ i = 3
+/\ j = 3
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<3>>
+/\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>>>
+/\ i = 3
+/\ j = 4
+/\ pc = "Lbl_2"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Lbl_2 line 61, col 10 to line 71, col 36 of module getAllSuffixes_v2>
+/\ currentSuffix = <<>>
+/\ allSuffixes = <<<<1, 2, 3>>, <<2, 3>>, <<3>>>>
+/\ i = 4
+/\ j = 4
+/\ pc = "Lbl_1"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 50, column 10 to line 59, column 60 in getAllSuffixes_v2
+1. Line 50, column 13 to line 50, column 24 in getAllSuffixes_v2
+2. Line 51, column 13 to line 58, column 35 in getAllSuffixes_v2
+3. Line 53, column 21 to line 58, column 35 in getAllSuffixes_v2
+4. Line 53, column 24 to line 57, column 75 in getAllSuffixes_v2
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-03-06 12:19:54
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 43, col 1 to line 43, col 4 of module getAllSuffixes_v2>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 44, col 9 to line 48, col 23 of module getAllSuffixes_v2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 50, col 1 to line 50, col 5 of module getAllSuffixes_v2>: 3:6
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 50, col 13 to line 50, col 24 of module getAllSuffixes_v2: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 50, col 13 to line 50, col 14 of module getAllSuffixes_v2: 26
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 51, col 16 to line 51, col 30 of module getAllSuffixes_v2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 52, col 21 to line 52, col 36 of module getAllSuffixes_v2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 53, col 39 to line 56, col 31 of module getAllSuffixes_v2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 54, col 32 to line 55, col 60 of module getAllSuffixes_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 55, col 32 to line 55, col 59 of module getAllSuffixes_v2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 54, col 41 to line 54, col 59 of module getAllSuffixes_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 53, col 48 to line 53, col 60 of module getAllSuffixes_v2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 58, col 24 to line 58, col 35 of module getAllSuffixes_v2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 59, col 13 to line 59, col 60 of module getAllSuffixes_v2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 61, col 1 to line 61, col 5 of module getAllSuffixes_v2>: 9:18
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 61, col 13 to line 61, col 24 of module getAllSuffixes_v2: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 61, col 13 to line 61, col 14 of module getAllSuffixes_v2: 21
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 16 to line 62, col 30 of module getAllSuffixes_v2: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 24 to line 63, col 71 of module getAllSuffixes_v2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 24 to line 64, col 33 of module getAllSuffixes_v2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 24 to line 65, col 36 of module getAllSuffixes_v2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 66, col 24 to line 66, col 53 of module getAllSuffixes_v2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 21 to line 71, col 36 of module getAllSuffixes_v2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 74, col 1 to line 74, col 11 of module getAllSuffixes_v2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 16 to line 74, col 26 of module getAllSuffixes_v2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 31 to line 74, col 44 of module getAllSuffixes_v2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(13) at 2023-03-06 12:19:54: 13 states generated (776 s/min), 13 distinct states found (776 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+13 states generated, 13 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1014ms at (2023-03-06 12:19:54)
+@!@!@ENDMSG 2186 @!@!@

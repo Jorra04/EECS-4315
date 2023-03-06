@@ -1,0 +1,99 @@
+--------------------- MODULE firstNonRepeatingCharacter ---------------------
+EXTENDS Integers, Sequences, TLC
+CONSTANT input
+
+(*
+--algorithm firstNonRepeating {
+
+    variable i = 1, j = 1,k=1, firstNonRepeating = "", duplicateFound = FALSE;
+    
+    {
+        while(i <= Len(input)) {
+            duplicateFound := FALSE;
+            j:= 1;
+            while(j <= Len(input)) {
+                if(input[i] = input[j] /\ (i # j)) {
+                    duplicateFound := TRUE;
+                    j := Len(input);
+                };
+                
+                j := j + 1;
+            };
+            
+            if(duplicateFound = FALSE) {
+                firstNonRepeating := input[i];
+                i:= Len(input);
+            };
+            
+            i := i + 1;
+        }
+    }
+    
+}
+*)
+\* BEGIN TRANSLATION (chksum(pcal) = "282fa483" /\ chksum(tla) = "aed91866")
+VARIABLES i, j, k, firstNonRepeating, duplicateFound, pc
+
+vars == << i, j, k, firstNonRepeating, duplicateFound, pc >>
+
+Init == (* Global variables *)
+        /\ i = 1
+        /\ j = 1
+        /\ k = 1
+        /\ firstNonRepeating = ""
+        /\ duplicateFound = FALSE
+        /\ pc = "Lbl_1"
+
+Lbl_1 == /\ pc = "Lbl_1"
+         /\ IF i <= Len(input)
+               THEN /\ duplicateFound' = FALSE
+                    /\ j' = 1
+                    /\ pc' = "Lbl_2"
+               ELSE /\ pc' = "Done"
+                    /\ UNCHANGED << j, duplicateFound >>
+         /\ UNCHANGED << i, k, firstNonRepeating >>
+
+Lbl_2 == /\ pc = "Lbl_2"
+         /\ IF j <= Len(input)
+               THEN /\ IF input[i] = input[j] /\ (i # j)
+                          THEN /\ duplicateFound' = TRUE
+                               /\ j' = Len(input)
+                          ELSE /\ TRUE
+                               /\ UNCHANGED << j, duplicateFound >>
+                    /\ pc' = "Lbl_3"
+                    /\ UNCHANGED << i, firstNonRepeating >>
+               ELSE /\ IF duplicateFound = FALSE
+                          THEN /\ firstNonRepeating' = input[i]
+                               /\ i' = Len(input)
+                          ELSE /\ TRUE
+                               /\ UNCHANGED << i, firstNonRepeating >>
+                    /\ pc' = "Lbl_4"
+                    /\ UNCHANGED << j, duplicateFound >>
+         /\ k' = k
+
+Lbl_3 == /\ pc = "Lbl_3"
+         /\ j' = j + 1
+         /\ pc' = "Lbl_2"
+         /\ UNCHANGED << i, k, firstNonRepeating, duplicateFound >>
+
+Lbl_4 == /\ pc = "Lbl_4"
+         /\ i' = i + 1
+         /\ pc' = "Lbl_1"
+         /\ UNCHANGED << j, k, firstNonRepeating, duplicateFound >>
+
+(* Allow infinite stuttering to prevent deadlock on termination. *)
+Terminating == pc = "Done" /\ UNCHANGED vars
+
+Next == Lbl_1 \/ Lbl_2 \/ Lbl_3 \/ Lbl_4
+           \/ Terminating
+
+Spec == Init /\ [][Next]_vars
+
+Termination == <>(pc = "Done")
+
+\* END TRANSLATION 
+
+=============================================================================
+\* Modification History
+\* Last modified Mon Mar 06 11:05:21 EST 2023 by jorra04
+\* Created Mon Mar 06 00:36:36 EST 2023 by jorra04

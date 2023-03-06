@@ -25,13 +25,17 @@ CONSTANT input
         (*
             for all x in range 1..Len(input), for all y in range 1..Len(input) - x + 1
         *)
-        assert (\A x \in 1..Len(input) : 
-        (\A y \in 1..(Len(input) - x + 1) : allSuffixes[x][y] = input[x + y -1])
-        );
+\*        assert (\A x \in 1..Len(input) : 
+\*        (\A y \in 1..(Len(input) - x + 1) : allSuffixes[x][y] = input[x + y -1])
+\*        );
+        assert (\A x \in 1..Len(input) :
+        (\A y \in 1..(Len(input)-x+1) :
+        (allSuffixes[x][y] = input[y+ x - 1])
+        ));
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "5905192d" /\ chksum(tla) = "81c30517")
+\* BEGIN TRANSLATION (chksum(pcal) = "fae10692" /\ chksum(tla) = "bb614d13")
 VARIABLES currentSuffix, allSuffixes, i, j, pc
 
 vars == << currentSuffix, allSuffixes, i, j, pc >>
@@ -47,9 +51,10 @@ Lbl_1 == /\ pc = "Lbl_1"
          /\ IF i <= Len(input)
                THEN /\ pc' = "Lbl_2"
                ELSE /\ Assert(       (\A x \in 1..Len(input) :
-                              (\A y \in 1..(Len(input) - x + 1) : allSuffixes[x][y] = input[x + y -1])
-                              ), 
-                              "Failure of assertion at line 28, column 9.")
+                              (\A y \in 1..(Len(input)-x+1) :
+                              (allSuffixes[x][y] = input[y+ x - 1])
+                              )), 
+                              "Failure of assertion at line 31, column 9.")
                     /\ pc' = "Done"
          /\ UNCHANGED << currentSuffix, allSuffixes, i, j >>
 
@@ -79,5 +84,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Mar 05 01:30:33 EST 2023 by jorra04
+\* Last modified Mon Mar 06 12:20:53 EST 2023 by jorra04
 \* Created Sun Mar 05 00:41:17 EST 2023 by jorra04

@@ -1,0 +1,33 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+8329962448459660411 [label="/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_1\"\n/\\ head = 1\n/\\ output = <<1, 2, 3, 4>>\n/\\ numShifts = 1",style = filled]
+8329962448459660411 -> 4063343358734696039 [label="",color="2",fontcolor="2"];
+4063343358734696039 [label="/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_2\"\n/\\ head = 1\n/\\ output = <<1, 2, 3, 4>>\n/\\ numShifts = 1"];
+4063343358734696039 -> -3007517201206591480 [label="",color="3",fontcolor="3"];
+-3007517201206591480 [label="/\\ i = 1\n/\\ j = 2\n/\\ pc = \"Lbl_2\"\n/\\ head = 1\n/\\ output = <<2, 2, 3, 4>>\n/\\ numShifts = 1"];
+-3007517201206591480 -> -8980977649482963794 [label="",color="3",fontcolor="3"];
+-8980977649482963794 [label="/\\ i = 1\n/\\ j = 3\n/\\ pc = \"Lbl_2\"\n/\\ head = 1\n/\\ output = <<2, 3, 3, 4>>\n/\\ numShifts = 1"];
+-8980977649482963794 -> -6352167385223432751 [label="",color="3",fontcolor="3"];
+-6352167385223432751 [label="/\\ i = 1\n/\\ j = 4\n/\\ pc = \"Lbl_2\"\n/\\ head = 1\n/\\ output = <<2, 3, 4, 4>>\n/\\ numShifts = 1"];
+-6352167385223432751 -> 9180041149720480717 [label="",color="3",fontcolor="3"];
+9180041149720480717 [label="/\\ i = 2\n/\\ j = 4\n/\\ pc = \"Lbl_1\"\n/\\ head = 1\n/\\ output = <<2, 3, 4, 1>>\n/\\ numShifts = 1"];
+9180041149720480717 -> 1082225214366627494 [label="",color="2",fontcolor="2"];
+1082225214366627494 [label="/\\ i = 2\n/\\ j = 4\n/\\ pc = \"Done\"\n/\\ head = 1\n/\\ output = <<2, 3, 4, 1>>\n/\\ numShifts = 1"];
+1082225214366627494 -> 1082225214366627494 [label="",color="4",fontcolor="4"];
+{rank = same; 8329962448459660411;}
+{rank = same; 4063343358734696039;}
+{rank = same; -3007517201206591480;}
+{rank = same; -8980977649482963794;}
+{rank = same; -6352167385223432751;}
+{rank = same; 9180041149720480717;}
+{rank = same; 1082225214366627494;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

@@ -10,7 +10,7 @@ CONSTANT input, n
     tail = input[Len(input)],
     numShift = (n % Len(input));
     {
-        while(i <= n) {
+        while(i <= numShift) {
             tail := output[Len(output)];
             j := Len(output);
           while(j > 1) {
@@ -30,7 +30,7 @@ CONSTANT input, n
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "4ccbe5be" /\ chksum(tla) = "b1ce379d")
+\* BEGIN TRANSLATION (chksum(pcal) = "b1fd4eb" /\ chksum(tla) = "41f97e97")
 VARIABLES output, i, j, tail, numShift, pc
 
 vars == << output, i, j, tail, numShift, pc >>
@@ -44,7 +44,7 @@ Init == (* Global variables *)
         /\ pc = "Lbl_1"
 
 Lbl_1 == /\ pc = "Lbl_1"
-         /\ IF i <= n
+         /\ IF i <= numShift
                THEN /\ tail' = output[Len(output)]
                     /\ j' = Len(output)
                     /\ pc' = "Lbl_2"
@@ -84,5 +84,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Mar 05 22:41:00 EST 2023 by jorra04
+\* Last modified Mon Mar 06 13:06:28 EST 2023 by jorra04
 \* Created Sun Mar 05 22:13:22 EST 2023 by jorra04

@@ -1,0 +1,48 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-1926233636809494523 [label="/\\ currentPrefix = <<>>\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+-1926233636809494523 -> 507634857820509082 [label="",color="2",fontcolor="2"];
+507634857820509082 [label="/\\ currentPrefix = <<>>\n/\\ i = 1\n/\\ j = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+507634857820509082 -> -1556873054570725056 [label="",color="3",fontcolor="3"];
+-1556873054570725056 [label="/\\ currentPrefix = <<1>>\n/\\ i = 1\n/\\ j = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+-1556873054570725056 -> 7330689205929991949 [label="",color="3",fontcolor="3"];
+7330689205929991949 [label="/\\ currentPrefix = <<>>\n/\\ i = 2\n/\\ j = 2\n/\\ pc = \"Lbl_1\"\n/\\ output = <<<<1>>>>"];
+7330689205929991949 -> 6883140888317645719 [label="",color="2",fontcolor="2"];
+6883140888317645719 [label="/\\ currentPrefix = <<>>\n/\\ i = 2\n/\\ j = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>>>"];
+6883140888317645719 -> 1220196921483562019 [label="",color="3",fontcolor="3"];
+1220196921483562019 [label="/\\ currentPrefix = <<1>>\n/\\ i = 2\n/\\ j = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>>>"];
+1220196921483562019 -> 869487288793622713 [label="",color="3",fontcolor="3"];
+869487288793622713 [label="/\\ currentPrefix = <<1, 2>>\n/\\ i = 2\n/\\ j = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>>>"];
+869487288793622713 -> -2145040951812704254 [label="",color="3",fontcolor="3"];
+-2145040951812704254 [label="/\\ currentPrefix = <<>>\n/\\ i = 3\n/\\ j = 3\n/\\ pc = \"Lbl_1\"\n/\\ output = <<<<1>>, <<1, 2>>>>"];
+-2145040951812704254 -> 1431796408285111418 [label="",color="2",fontcolor="2"];
+1431796408285111418 [label="/\\ currentPrefix = <<>>\n/\\ i = 3\n/\\ j = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>, <<1, 2>>>>"];
+1431796408285111418 -> -1204288237112663123 [label="",color="3",fontcolor="3"];
+-1204288237112663123 [label="/\\ currentPrefix = <<1>>\n/\\ i = 3\n/\\ j = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>, <<1, 2>>>>"];
+-1204288237112663123 -> -4385653612168372028 [label="",color="3",fontcolor="3"];
+-4385653612168372028 [label="/\\ currentPrefix = <<1, 2>>\n/\\ i = 3\n/\\ j = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>, <<1, 2>>>>"];
+-4385653612168372028 -> 3649249758195380637 [label="",color="3",fontcolor="3"];
+3649249758195380637 [label="/\\ currentPrefix = <<1, 2, 3>>\n/\\ i = 3\n/\\ j = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<<<1>>, <<1, 2>>>>"];
+3649249758195380637 -> 3530412008578516359 [label="",color="3",fontcolor="3"];
+3530412008578516359 [label="/\\ currentPrefix = <<>>\n/\\ i = 4\n/\\ j = 4\n/\\ pc = \"Lbl_1\"\n/\\ output = <<<<1>>, <<1, 2>>, <<1, 2, 3>>>>"];
+{rank = same; -1926233636809494523;}
+{rank = same; 507634857820509082;}
+{rank = same; -1556873054570725056;}
+{rank = same; 7330689205929991949;}
+{rank = same; 6883140888317645719;}
+{rank = same; 1220196921483562019;}
+{rank = same; 869487288793622713;}
+{rank = same; -2145040951812704254;}
+{rank = same; 1431796408285111418;}
+{rank = same; -1204288237112663123;}
+{rank = same; -4385653612168372028;}
+{rank = same; 3649249758195380637;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}
