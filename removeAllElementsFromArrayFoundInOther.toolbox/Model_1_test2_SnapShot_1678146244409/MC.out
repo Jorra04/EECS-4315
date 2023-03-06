@@ -1,0 +1,511 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 75 and seed -4760572922485933978 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 395327] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/removeAllElementsFromArrayFoundInOther.toolbox/Model_1_test2/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/removeAllElementsFromArrayFoundInOther.toolbox/Model_1_test2/removeAllElementsFromArrayFoundInOther.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module removeAllElementsFromArrayFoundInOther
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-03-06 18:44:02)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-03-06 18:44:03.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2132:1 @!@!@
+The first argument of Assert evaluated to FALSE; the second argument was:
+"Failure of assertion at line 35, column 9."
+@!@!@ENDMSG 2132 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Lbl_1 line 53, col 10 to line 68, col 37 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 1
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 1
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 1
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 1
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 1
+/\ j = 6
+/\ pc = "Lbl_2"
+/\ output = <<>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 6
+/\ pc = "Lbl_1"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Lbl_1 line 53, col 10 to line 68, col 37 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 2
+/\ j = 6
+/\ pc = "Lbl_2"
+/\ output = <<1>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 6
+/\ pc = "Lbl_1"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <Lbl_1 line 53, col 10 to line 68, col 37 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+20: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+21: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 3
+/\ j = 6
+/\ pc = "Lbl_2"
+/\ output = <<1, 2>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+22: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 6
+/\ pc = "Lbl_1"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+23: <Lbl_1 line 53, col 10 to line 68, col 37 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+24: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+25: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+26: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+27: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+28: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 4
+/\ j = 6
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+29: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 6
+/\ pc = "Lbl_1"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+30: <Lbl_1 line 53, col 10 to line 68, col 37 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 1
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+31: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 2
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+32: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 3
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+33: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 4
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+34: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 5
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+35: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 5
+/\ j = 6
+/\ pc = "Lbl_2"
+/\ output = <<1, 2, 3, 4>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+36: <Lbl_2 line 70, col 10 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther>
+/\ i = 6
+/\ j = 6
+/\ pc = "Lbl_1"
+/\ output = <<1, 2, 3, 4, 5>>
+/\ duplicateFound = FALSE
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 53, column 10 to line 68, column 37 in removeAllElementsFromArrayFoundInOther
+1. Line 53, column 13 to line 53, column 24 in removeAllElementsFromArrayFoundInOther
+2. Line 54, column 13 to line 67, column 56 in removeAllElementsFromArrayFoundInOther
+3. Line 58, column 21 to line 67, column 56 in removeAllElementsFromArrayFoundInOther
+4. Line 58, column 24 to line 61, column 75 in removeAllElementsFromArrayFoundInOther
+5. Line 62, column 24 to line 65, column 75 in removeAllElementsFromArrayFoundInOther
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-03-06 18:44:03
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 46, col 1 to line 46, col 4 of module removeAllElementsFromArrayFoundInOther>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 47, col 9 to line 51, col 23 of module removeAllElementsFromArrayFoundInOther: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 53, col 1 to line 53, col 5 of module removeAllElementsFromArrayFoundInOther>: 5:10
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 53, col 13 to line 53, col 24 of module removeAllElementsFromArrayFoundInOther: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 53, col 13 to line 53, col 14 of module removeAllElementsFromArrayFoundInOther: 72
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 54, col 16 to line 54, col 31 of module removeAllElementsFromArrayFoundInOther: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 55, col 21 to line 57, col 36 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 58, col 39 to line 59, col 81 of module removeAllElementsFromArrayFoundInOther: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 59, col 32 to line 59, col 80 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 59, col 59 to line 59, col 79 of module removeAllElementsFromArrayFoundInOther: 30
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 59, col 41 to line 59, col 54 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 58, col 48 to line 58, col 61 of module removeAllElementsFromArrayFoundInOther: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 24 to line 65, col 75 of module removeAllElementsFromArrayFoundInOther: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 66, col 24 to line 66, col 35 of module removeAllElementsFromArrayFoundInOther: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 24 to line 67, col 56 of module removeAllElementsFromArrayFoundInOther: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 13 to line 68, col 37 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 70, col 1 to line 70, col 5 of module removeAllElementsFromArrayFoundInOther>: 30:60
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 13 to line 70, col 24 of module removeAllElementsFromArrayFoundInOther: 125
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 70, col 13 to line 70, col 14 of module removeAllElementsFromArrayFoundInOther: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 16 to line 71, col 31 of module removeAllElementsFromArrayFoundInOther: 60
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 27 to line 72, col 58 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 72, col 27 to line 72, col 31 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 72, col 37 to line 72, col 57 of module removeAllElementsFromArrayFoundInOther: 40
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 35 to line 73, col 56 of module removeAllElementsFromArrayFoundInOther: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 35 to line 74, col 38 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 35 to line 75, col 58 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 24 to line 76, col 33 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 24 to line 77, col 36 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 24 to line 78, col 48 of module removeAllElementsFromArrayFoundInOther: 50
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 79, col 27 to line 79, col 48 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 80, col 32 to line 80, col 69 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 35 to line 82, col 50 of module removeAllElementsFromArrayFoundInOther: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 24 to line 83, col 46 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 84, col 24 to line 84, col 33 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 24 to line 85, col 36 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 24 to line 86, col 29 of module removeAllElementsFromArrayFoundInOther: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 89, col 1 to line 89, col 11 of module removeAllElementsFromArrayFoundInOther>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 16 to line 89, col 26 of module removeAllElementsFromArrayFoundInOther: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 31 to line 89, col 44 of module removeAllElementsFromArrayFoundInOther: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(36) at 2023-03-06 18:44:03: 36 states generated (2,078 s/min), 36 distinct states found (2,078 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+36 states generated, 36 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1048ms at (2023-03-06 18:44:03)
+@!@!@ENDMSG 2186 @!@!@
