@@ -8,21 +8,16 @@ CONSTANT input
     i = 2;
     
     {
-        assert /\ (Len(output) = 1) /\ (output[1] = 1) /\ (i = 2) /\ (input >= 1);
+        assert /\ (Len(output) = 1) /\ (output[1] = 1) /\ (i = 2);
     
         while(i <= input) {
             output := Append(output, i * output[i-1]);
             i := i + 1;
-        };
-        
-        assert (Len(output) = input) /\ (output[1] = 1);
-        assert (\A x \in 2..Len(output) : 
-        (output[x] = (x * output[x-1]))
-        );
+        }
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "5954487e" /\ chksum(tla) = "ba34ff79")
+\* BEGIN TRANSLATION (chksum(pcal) = "98cc3d" /\ chksum(tla) = "db4fd763")
 VARIABLES output, i, pc
 
 vars == << output, i, pc >>
@@ -33,7 +28,7 @@ Init == (* Global variables *)
         /\ pc = "Lbl_1"
 
 Lbl_1 == /\ pc = "Lbl_1"
-         /\ Assert(/\ (Len(output) = 1) /\ (output[1] = 1) /\ (i = 2) /\ (input >= 1), 
+         /\ Assert(/\ (Len(output) = 1) /\ (output[1] = 1) /\ (i = 2), 
                    "Failure of assertion at line 11, column 9.")
          /\ pc' = "Lbl_2"
          /\ UNCHANGED << output, i >>
@@ -43,13 +38,7 @@ Lbl_2 == /\ pc = "Lbl_2"
                THEN /\ output' = Append(output, i * output[i-1])
                     /\ i' = i + 1
                     /\ pc' = "Lbl_2"
-               ELSE /\ Assert((Len(output) = input) /\ (output[1] = 1), 
-                              "Failure of assertion at line 18, column 9.")
-                    /\ Assert(       (\A x \in 2..Len(output) :
-                              (output[x] = (x * output[x-1]))
-                              ), 
-                              "Failure of assertion at line 19, column 9.")
-                    /\ pc' = "Done"
+               ELSE /\ pc' = "Done"
                     /\ UNCHANGED << output, i >>
 
 (* Allow infinite stuttering to prevent deadlock on termination. *)
@@ -66,5 +55,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Tue Mar 07 11:25:34 EST 2023 by jorra04
+\* Last modified Tue Mar 07 11:23:22 EST 2023 by jorra04
 \* Created Tue Mar 07 11:12:48 EST 2023 by jorra04

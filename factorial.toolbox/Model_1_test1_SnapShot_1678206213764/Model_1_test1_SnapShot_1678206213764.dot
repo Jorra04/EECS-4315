@@ -1,0 +1,33 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-1085759607281712564 [label="/\\ i = 2\n/\\ pc = \"Lbl_1\"\n/\\ output = <<1>>",style = filled]
+-1085759607281712564 -> -7950520810831675931 [label="",color="2",fontcolor="2"];
+-7950520810831675931 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1>>"];
+-7950520810831675931 -> 8596166262906901461 [label="",color="3",fontcolor="3"];
+8596166262906901461 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2>>"];
+8596166262906901461 -> -1615544863222831401 [label="",color="3",fontcolor="3"];
+-1615544863222831401 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 6>>"];
+-1615544863222831401 -> -4975126937353820104 [label="",color="3",fontcolor="3"];
+-4975126937353820104 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 6, 24>>"];
+-4975126937353820104 -> -5572763158226741262 [label="",color="3",fontcolor="3"];
+-5572763158226741262 [label="/\\ i = 6\n/\\ pc = \"Lbl_2\"\n/\\ output = <<1, 2, 6, 24, 120>>"];
+-5572763158226741262 -> -955237300957311282 [label="",color="3",fontcolor="3"];
+-955237300957311282 [label="/\\ i = 6\n/\\ pc = \"Done\"\n/\\ output = <<1, 2, 6, 24, 120>>"];
+-955237300957311282 -> -955237300957311282 [label="",color="4",fontcolor="4"];
+{rank = same; -1085759607281712564;}
+{rank = same; -7950520810831675931;}
+{rank = same; 8596166262906901461;}
+{rank = same; -1615544863222831401;}
+{rank = same; -4975126937353820104;}
+{rank = same; -5572763158226741262;}
+{rank = same; -955237300957311282;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}
