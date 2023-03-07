@@ -19,12 +19,16 @@ CONSTANT input
             output := Append(output,  output[i-1] + output[i-2]);
             result := output[Len(output)];
             i := i +1;
-        }
+        };
+        assert (Len(output) = input);
+        assert (\A x \in 3..Len(output): 
+        (output[x] = (output[x-1] + output[x-2]))
+        );
     }
     
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "9271bf62" /\ chksum(tla) = "da74b47d")
+\* BEGIN TRANSLATION (chksum(pcal) = "ec843514" /\ chksum(tla) = "8c2d9490")
 VARIABLES output, i, result, pc
 
 vars == << output, i, result, pc >>
@@ -49,7 +53,13 @@ Lbl_2 == /\ pc = "Lbl_2"
                     /\ result' = output'[Len(output')]
                     /\ i' = i +1
                     /\ pc' = "Lbl_2"
-               ELSE /\ pc' = "Done"
+               ELSE /\ Assert((Len(output) = input), 
+                              "Failure of assertion at line 23, column 9.")
+                    /\ Assert(       (\A x \in 3..Len(output):
+                              (output[x] = (output[x-1] + output[x-2]))
+                              ), 
+                              "Failure of assertion at line 24, column 9.")
+                    /\ pc' = "Done"
                     /\ UNCHANGED << output, i, result >>
 
 (* Allow infinite stuttering to prevent deadlock on termination. *)
@@ -66,5 +76,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Mar 05 23:23:01 EST 2023 by jorra04
+\* Last modified Mon Mar 06 21:48:59 EST 2023 by jorra04
 \* Created Sun Mar 05 23:08:21 EST 2023 by jorra04

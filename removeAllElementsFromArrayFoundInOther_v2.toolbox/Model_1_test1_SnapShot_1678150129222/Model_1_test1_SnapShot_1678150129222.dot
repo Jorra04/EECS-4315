@@ -1,0 +1,39 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-8381370159163947584 [label="/\\ input2Set = {}\n/\\ input1Set = {}\n/\\ complementSet = {}\n/\\ i = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+-8381370159163947584 -> -2406070936427847643 [label="",color="2",fontcolor="2"];
+-2406070936427847643 [label="/\\ input2Set = {}\n/\\ input1Set = {1}\n/\\ complementSet = {}\n/\\ i = 2\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>"];
+-2406070936427847643 -> -8475652228081551790 [label="",color="2",fontcolor="2"];
+-8475652228081551790 [label="/\\ input2Set = {}\n/\\ input1Set = {1, 2}\n/\\ complementSet = {}\n/\\ i = 3\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>"];
+-8475652228081551790 -> 8251453769483788301 [label="",color="2",fontcolor="2"];
+8251453769483788301 [label="/\\ input2Set = {}\n/\\ input1Set = {1, 2, 3}\n/\\ complementSet = {}\n/\\ i = 4\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>"];
+8251453769483788301 -> 345213790273824888 [label="",color="2",fontcolor="2"];
+345213790273824888 [label="/\\ input2Set = {}\n/\\ input1Set = {1, 2, 3, 4}\n/\\ complementSet = {}\n/\\ i = 5\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>"];
+345213790273824888 -> -2756929985450803683 [label="",color="2",fontcolor="2"];
+-2756929985450803683 [label="/\\ input2Set = {}\n/\\ input1Set = {1, 2, 3, 4}\n/\\ complementSet = {}\n/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+-2756929985450803683 -> -3092811373652965304 [label="",color="3",fontcolor="3"];
+-3092811373652965304 [label="/\\ input2Set = {3}\n/\\ input1Set = {1, 2, 3, 4}\n/\\ complementSet = {}\n/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+-3092811373652965304 -> -8222178028853172843 [label="",color="3",fontcolor="3"];
+-8222178028853172843 [label="/\\ input2Set = {3, 4}\n/\\ input1Set = {1, 2, 3, 4}\n/\\ complementSet = {}\n/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+-8222178028853172843 -> 7502822363177977538 [label="",color="3",fontcolor="3"];
+7502822363177977538 [label="/\\ input2Set = {3, 4, 5}\n/\\ input1Set = {1, 2, 3, 4}\n/\\ complementSet = {}\n/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+7502822363177977538 -> -4053912732819829127 [label="",color="3",fontcolor="3"];
+-4053912732819829127 [label="/\\ input2Set = {3, 4, 5, 6}\n/\\ input1Set = {1, 2, 3, 4}\n/\\ complementSet = {}\n/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ output = <<>>"];
+{rank = same; -8381370159163947584;}
+{rank = same; -2406070936427847643;}
+{rank = same; -8475652228081551790;}
+{rank = same; 8251453769483788301;}
+{rank = same; 345213790273824888;}
+{rank = same; -2756929985450803683;}
+{rank = same; -3092811373652965304;}
+{rank = same; -8222178028853172843;}
+{rank = same; 7502822363177977538;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

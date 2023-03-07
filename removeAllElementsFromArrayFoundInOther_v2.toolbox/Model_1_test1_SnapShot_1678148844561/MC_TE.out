@@ -1,0 +1,180 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 54 and seed -4789496193453228582 with 3 workers on 6 cores with 608MB heap and 1365MB offheap memory [pid: 110219] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/removeAllElementsFromArrayFoundInOther_v2.toolbox/Model_1_test1/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/removeAllElementsFromArrayFoundInOther_v2.toolbox/Model_1_test1/removeAllElementsFromArrayFoundInOther_v2.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module removeAllElementsFromArrayFoundInOther_v2
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-03-06 19:27:21)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-03-06 19:27:23.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 7.0E-19
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-03-06 19:27:23
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 46, col 1 to line 46, col 4 of module removeAllElementsFromArrayFoundInOther_v2>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 47, col 9 to line 52, col 23 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 54, col 1 to line 54, col 5 of module removeAllElementsFromArrayFoundInOther_v2>: 5:5
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 54, col 13 to line 54, col 24 of module removeAllElementsFromArrayFoundInOther_v2: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 54, col 13 to line 54, col 14 of module removeAllElementsFromArrayFoundInOther_v2: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 55, col 16 to line 55, col 31 of module removeAllElementsFromArrayFoundInOther_v2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 21 to line 58, col 36 of module removeAllElementsFromArrayFoundInOther_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 59, col 24 to line 59, col 29 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 60, col 24 to line 60, col 36 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 61, col 24 to line 61, col 42 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 13 to line 62, col 60 of module removeAllElementsFromArrayFoundInOther_v2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 64, col 1 to line 64, col 5 of module removeAllElementsFromArrayFoundInOther_v2>: 5:5
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 13 to line 64, col 24 of module removeAllElementsFromArrayFoundInOther_v2: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 64, col 13 to line 64, col 14 of module removeAllElementsFromArrayFoundInOther_v2: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 65, col 16 to line 65, col 31 of module removeAllElementsFromArrayFoundInOther_v2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 66, col 24 to line 66, col 66 of module removeAllElementsFromArrayFoundInOther_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 24 to line 67, col 33 of module removeAllElementsFromArrayFoundInOther_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 24 to line 68, col 36 of module removeAllElementsFromArrayFoundInOther_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 24 to line 69, col 46 of module removeAllElementsFromArrayFoundInOther_v2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 24 to line 70, col 61 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 24 to line 71, col 29 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 24 to line 72, col 36 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 24 to line 73, col 42 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 13 to line 74, col 45 of module removeAllElementsFromArrayFoundInOther_v2: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_3 line 76, col 1 to line 76, col 5 of module removeAllElementsFromArrayFoundInOther_v2>: 2:3
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 13 to line 76, col 24 of module removeAllElementsFromArrayFoundInOther_v2: 16
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 76, col 13 to line 76, col 14 of module removeAllElementsFromArrayFoundInOther_v2: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 16 to line 77, col 31 of module removeAllElementsFromArrayFoundInOther_v2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 27 to line 78, col 53 of module removeAllElementsFromArrayFoundInOther_v2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 79, col 32 to line 80, col 44 of module removeAllElementsFromArrayFoundInOther_v2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 35 to line 81, col 38 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 35 to line 82, col 59 of module removeAllElementsFromArrayFoundInOther_v2: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 24 to line 83, col 36 of module removeAllElementsFromArrayFoundInOther_v2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 24 to line 92, col 35 of module removeAllElementsFromArrayFoundInOther_v2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 24 to line 93, col 48 of module removeAllElementsFromArrayFoundInOther_v2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 13 to line 94, col 63 of module removeAllElementsFromArrayFoundInOther_v2: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 97, col 1 to line 97, col 11 of module removeAllElementsFromArrayFoundInOther_v2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 16 to line 97, col 26 of module removeAllElementsFromArrayFoundInOther_v2: 13
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 31 to line 97, col 44 of module removeAllElementsFromArrayFoundInOther_v2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(13) at 2023-03-06 19:27:23: 14 states generated (199 s/min), 13 distinct states found (185 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+14 states generated, 13 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 13.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 4300ms at (2023-03-06 19:27:23)
+@!@!@ENDMSG 2186 @!@!@

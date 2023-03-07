@@ -1,0 +1,159 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 107 and seed 7237812653700295292 with 3 workers on 6 cores with 1214MB heap and 2730MB offheap memory [pid: 191152] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/twoSum.toolbox/Model_1_test3/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/twoSum.toolbox/Model_1_test3/twoSum.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module twoSum
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-03-06 22:26:53)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-03-06 22:26:56.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2132:1 @!@!@
+The first argument of Assert evaluated to FALSE; the second argument was:
+"Failure of assertion at line 20, column 9."
+@!@!@ENDMSG 2132 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ i = 1
+/\ j = 1
+/\ pc = "Lbl_1"
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 59, column 10 to line 64, column 40 in twoSum
+1. Line 59, column 13 to line 59, column 24 in twoSum
+2. Line 60, column 13 to line 62, column 67 in twoSum
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-03-06 22:26:57
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 53, col 1 to line 53, col 4 of module twoSum>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 54, col 9 to line 57, col 23 of module twoSum: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 59, col 1 to line 59, col 5 of module twoSum>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 59, col 13 to line 59, col 24 of module twoSum: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 60, col 28 to line 61, col 59 of module twoSum: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 61, col 20 to line 61, col 59 of module twoSum: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 61, col 21 to line 61, col 25 of module twoSum: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 61, col 31 to line 61, col 58 of module twoSum: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 60, col 39 to line 60, col 51 of module twoSum: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 13 to line 63, col 25 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 13 to line 64, col 40 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 66, col 1 to line 66, col 5 of module twoSum>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 24 to line 68, col 33 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 24 to line 69, col 36 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 24 to line 75, col 35 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 24 to line 76, col 29 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 13 to line 77, col 37 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_3 line 79, col 1 to line 79, col 5 of module twoSum>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 35 to line 82, col 61 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 84, col 35 to line 84, col 50 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 24 to line 85, col 33 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 24 to line 86, col 36 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 24 to line 87, col 29 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 24 to line 88, col 33 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 24 to line 89, col 36 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 24 to line 90, col 48 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 93, col 1 to line 93, col 11 of module twoSum>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 31 to line 93, col 44 of module twoSum: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(1) at 2023-03-06 22:26:57: 1 states generated (10 s/min), 1 distinct states found (10 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+1 states generated, 1 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 5604ms at (2023-03-06 22:26:57)
+@!@!@ENDMSG 2186 @!@!@

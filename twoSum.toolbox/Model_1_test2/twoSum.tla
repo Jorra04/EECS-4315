@@ -12,10 +12,14 @@ CONSTANT input, target
     
     {
         \* assert that there is some solution.
-        assert (\E x \in 1..Len(input) : 
-        (\E y \in 1..Len(input) :
-            ((x /= y)/\ input[x] + input[y] = target)
-        ));
+\*        assert (\E x \in 1..Len(input) : 
+\*        (\E y \in 1..Len(input) :
+\*            ((x /= y)/\ input[x] + input[y] = target)
+\*        ));
+
+        assert (\E x,y \in 1..Len(input) :
+        (x # y) /\(input[x] + input[y] = target)
+        );
         
         
         while(i <= Len(input)) {
@@ -41,7 +45,7 @@ CONSTANT input, target
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "eccfcfb8" /\ chksum(tla) = "8dbae99f")
+\* BEGIN TRANSLATION (chksum(pcal) = "1a7e872a" /\ chksum(tla) = "5eebab8e")
 VARIABLES output, i, j, pc
 
 vars == << output, i, j, pc >>
@@ -53,10 +57,9 @@ Init == (* Global variables *)
         /\ pc = "Lbl_1"
 
 Lbl_1 == /\ pc = "Lbl_1"
-         /\ Assert(       (\E x \in 1..Len(input) :
-                   (\E y \in 1..Len(input) :
-                       ((x /= y)/\ input[x] + input[y] = target)
-                   )), "Failure of assertion at line 15, column 9.")
+         /\ Assert(       (\E x,y \in 1..Len(input) :
+                   (x # y) /\(input[x] + input[y] = target)
+                   ), "Failure of assertion at line 20, column 9.")
          /\ pc' = "Lbl_2"
          /\ UNCHANGED << output, i, j >>
 
@@ -68,7 +71,7 @@ Lbl_2 == /\ pc = "Lbl_2"
                               (\A y \in 1..Len(input) :
                               ((x /= y) /\ (input[x] + input[y] = target)) => ((output[1] = x /\ output[2] = y)\/(output[1] = y /\ output[2] = x))
                               )), 
-                              "Failure of assertion at line 37, column 2.")
+                              "Failure of assertion at line 41, column 2.")
                     /\ pc' = "Done"
                     /\ j' = j
          /\ UNCHANGED << output, i >>
@@ -100,5 +103,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Mar 05 23:57:10 EST 2023 by jorra04
+\* Last modified Mon Mar 06 22:25:24 EST 2023 by jorra04
 \* Created Sun Mar 05 23:25:37 EST 2023 by jorra04

@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 96 and seed 4601300504294832269 with 6 workers on 12 cores with 1157MB heap and 2603MB offheap memory [pid: 272279] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 47 and seed 7635429216190929293 with 3 workers on 6 cores with 1214MB heap and 2730MB offheap memory [pid: 166866] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -26,104 +26,119 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-03-05 23:24:06)
+Starting... (2023-03-06 21:49:04)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-03-05 23:24:07.
+Finished computing initial states: 1 distinct state generated at 2023-03-06 21:49:06.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
   Estimates of the probability that TLC did not check all reachable states
   because two distinct states had the same fingerprint:
-  calculated (optimistic):  val = 4.9E-19
+  calculated (optimistic):  val = 2.7E-19
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-03-05 23:24:07
+The coverage statistics at 2023-03-06 21:49:06
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 32, col 1 to line 32, col 4 of module fibonnaciSeq>: 1:1
+<Init line 36, col 1 to line 36, col 4 of module fibonnaciSeq>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 33, col 9 to line 36, col 23 of module fibonnaciSeq: 1
+  line 37, col 9 to line 40, col 23 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Lbl_1 line 38, col 1 to line 38, col 5 of module fibonnaciSeq>: 1:1
+<Lbl_1 line 42, col 1 to line 42, col 5 of module fibonnaciSeq>: 1:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 38, col 13 to line 38, col 24 of module fibonnaciSeq: 10
+  line 42, col 13 to line 42, col 24 of module fibonnaciSeq: 6
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 38, col 13 to line 38, col 14 of module fibonnaciSeq: 9
+  |line 42, col 13 to line 42, col 14 of module fibonnaciSeq: 5
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 39, col 16 to line 39, col 50 of module fibonnaciSeq: 1
+  line 43, col 16 to line 43, col 50 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 40, col 24 to line 40, col 46 of module fibonnaciSeq: 0
+  line 44, col 24 to line 44, col 46 of module fibonnaciSeq: 0
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 41, col 24 to line 41, col 27 of module fibonnaciSeq: 1
+  line 45, col 24 to line 45, col 27 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 42, col 24 to line 42, col 39 of module fibonnaciSeq: 1
+  line 46, col 24 to line 46, col 39 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 43, col 13 to line 43, col 25 of module fibonnaciSeq: 1
+  line 47, col 13 to line 47, col 25 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 44, col 13 to line 44, col 37 of module fibonnaciSeq: 1
+  line 48, col 13 to line 48, col 37 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Lbl_2 line 46, col 1 to line 46, col 5 of module fibonnaciSeq>: 7:7
+<Lbl_2 line 50, col 1 to line 50, col 5 of module fibonnaciSeq>: 3:3
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 46, col 13 to line 46, col 24 of module fibonnaciSeq: 16
+  line 50, col 13 to line 50, col 24 of module fibonnaciSeq: 8
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 46, col 13 to line 46, col 14 of module fibonnaciSeq: 9
+  |line 50, col 13 to line 50, col 14 of module fibonnaciSeq: 5
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 47, col 16 to line 47, col 25 of module fibonnaciSeq: 7
+  line 51, col 16 to line 51, col 25 of module fibonnaciSeq: 3
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 48, col 21 to line 51, col 36 of module fibonnaciSeq: 6
+  line 52, col 21 to line 55, col 36 of module fibonnaciSeq: 2
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 52, col 24 to line 52, col 35 of module fibonnaciSeq: 1
+  line 56, col 24 to line 57, col 75 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 53, col 24 to line 53, col 56 of module fibonnaciSeq: 1
+  line 58, col 24 to line 61, col 75 of module fibonnaciSeq: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 58, col 39 to line 59, col 71 of module fibonnaciSeq: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 59, col 32 to line 59, col 70 of module fibonnaciSeq: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 58, col 48 to line 58, col 61 of module fibonnaciSeq: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 24 to line 62, col 35 of module fibonnaciSeq: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 24 to line 63, col 56 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Terminating line 56, col 1 to line 56, col 11 of module fibonnaciSeq>: 0:1
+<Terminating line 66, col 1 to line 66, col 11 of module fibonnaciSeq>: 0:1
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 56, col 16 to line 56, col 26 of module fibonnaciSeq: 10
+  line 66, col 16 to line 66, col 26 of module fibonnaciSeq: 6
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 56, col 16 to line 56, col 17 of module fibonnaciSeq: 9
+  |line 66, col 16 to line 66, col 17 of module fibonnaciSeq: 5
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 56, col 31 to line 56, col 44 of module fibonnaciSeq: 1
+  line 66, col 31 to line 66, col 44 of module fibonnaciSeq: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2023-03-05 23:24:07: 10 states generated (610 s/min), 9 distinct states found (549 ds/min), 0 states left on queue.
+Progress(5) at 2023-03-06 21:49:06: 6 states generated (104 s/min), 5 distinct states found (87 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
-10 states generated, 9 distinct states found, 0 states left on queue.
+6 states generated, 5 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2199 @!@!@
 @!@!@STARTMSG 2194:0 @!@!@
-The depth of the complete state graph search is 9.
+The depth of the complete state graph search is 5.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2268:0 @!@!@
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 1 and the 95th percentile is 1).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 995ms at (2023-03-05 23:24:07)
+Finished in 3452ms at (2023-03-06 21:49:06)
 @!@!@ENDMSG 2186 @!@!@

@@ -1,0 +1,24 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-6725604855471137528 [label="/\\ tripleFound = FALSE\n/\\ i = 1\n/\\ pc = \"Lbl_1\"",style = filled]
+-6725604855471137528 -> -8274869808005767478 [label="",color="2",fontcolor="2"];
+-8274869808005767478 [label="/\\ tripleFound = FALSE\n/\\ i = 1\n/\\ pc = \"Lbl_2\""];
+-8274869808005767478 -> 2611714774544265634 [label="",color="3",fontcolor="3"];
+2611714774544265634 [label="/\\ tripleFound = TRUE\n/\\ i = 2\n/\\ pc = \"Lbl_2\""];
+2611714774544265634 -> 1464655495058067095 [label="",color="3",fontcolor="3"];
+1464655495058067095 [label="/\\ tripleFound = TRUE\n/\\ i = 2\n/\\ pc = \"Done\""];
+1464655495058067095 -> 1464655495058067095 [label="",color="4",fontcolor="4"];
+{rank = same; -6725604855471137528;}
+{rank = same; -8274869808005767478;}
+{rank = same; 2611714774544265634;}
+{rank = same; 1464655495058067095;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=4]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}
