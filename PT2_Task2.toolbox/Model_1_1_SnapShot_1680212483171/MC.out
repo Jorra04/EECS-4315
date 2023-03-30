@@ -1,0 +1,483 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 52 and seed 2320527908250109731 with 6 workers on 12 cores with 2315MB heap and 5206MB offheap memory [pid: 65203] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /eecs/home/jorra04/EECS 4315/PT2_Task2.toolbox/Model_1_1/MC.tla
+Parsing file /eecs/home/jorra04/EECS 4315/PT2_Task2.toolbox/Model_1_1/PT2_Task2.tla
+Labels added.
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /eecs/local/pkg/tlatoolbox-1.7.1/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module PT2_Task2
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2023-03-30 17:41:20)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2023-03-30 17:41:22.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2132:1 @!@!@
+The first argument of Assert evaluated to FALSE; the second argument was:
+"Failure of assertion at line 57, column 1."
+@!@!@ENDMSG 2132 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ temp0 = <<>>
+/\ temp1 = <<>>
+/\ temp2 = <<>>
+/\ i = 1
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 0
+/\ numberOfMultiplesOf3Plus2 = 0
+/\ numberOfMultiplesOf3 = 0
+/\ pc = "Lbl_1"
+/\ remainder = 0
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<>>
+/\ temp1 = <<>>
+/\ temp2 = <<2>>
+/\ i = 2
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 0
+/\ numberOfMultiplesOf3Plus2 = 1
+/\ numberOfMultiplesOf3 = 0
+/\ pc = "Lbl_1"
+/\ remainder = 2
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<>>
+/\ temp1 = <<4>>
+/\ temp2 = <<2>>
+/\ i = 3
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 1
+/\ numberOfMultiplesOf3Plus2 = 1
+/\ numberOfMultiplesOf3 = 0
+/\ pc = "Lbl_1"
+/\ remainder = 1
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<6>>
+/\ temp1 = <<4>>
+/\ temp2 = <<2>>
+/\ i = 4
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 1
+/\ numberOfMultiplesOf3Plus2 = 1
+/\ numberOfMultiplesOf3 = 1
+/\ pc = "Lbl_1"
+/\ remainder = 0
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<6>>
+/\ temp1 = <<4>>
+/\ temp2 = <<2, 5>>
+/\ i = 5
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 1
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 1
+/\ pc = "Lbl_1"
+/\ remainder = 2
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<6>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 6
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 1
+/\ pc = "Lbl_1"
+/\ remainder = 1
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_1"
+/\ remainder = 0
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Lbl_1 line 85, col 10 to line 111, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_2"
+/\ remainder = 0
+/\ output = <<>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Lbl_2 line 113, col 10 to line 123, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 2
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_2"
+/\ remainder = 0
+/\ output = <<6>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <Lbl_2 line 113, col 10 to line 123, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 3
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_2"
+/\ remainder = 0
+/\ output = <<6, 3>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <Lbl_2 line 113, col 10 to line 123, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_3"
+/\ remainder = 0
+/\ output = <<6, 3>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Lbl_3 line 125, col 10 to line 135, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 2
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_3"
+/\ remainder = 0
+/\ output = <<6, 3, 4>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Lbl_3 line 125, col 10 to line 135, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 3
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_3"
+/\ remainder = 0
+/\ output = <<6, 3, 4, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <Lbl_3 line 125, col 10 to line 135, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 1
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_4"
+/\ remainder = 0
+/\ output = <<6, 3, 4, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <Lbl_4 line 137, col 10 to line 150, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 2
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_4"
+/\ remainder = 0
+/\ output = <<6, 3, 4, 1, 2>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <Lbl_4 line 137, col 10 to line 150, col 37 of module PT2_Task2>
+/\ temp0 = <<6, 3>>
+/\ temp1 = <<4, 1>>
+/\ temp2 = <<2, 5>>
+/\ i = 7
+/\ j = 3
+/\ numberOfMultiplesOf3Plus1 = 2
+/\ numberOfMultiplesOf3Plus2 = 2
+/\ numberOfMultiplesOf3 = 2
+/\ pc = "Lbl_4"
+/\ remainder = 0
+/\ output = <<6, 3, 4, 1, 2, 5>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2103:1 @!@!@
+The error occurred when TLC was evaluating the nested
+expressions at the following positions:
+0. Line 137, column 10 to line 150, column 37 in PT2_Task2
+1. Line 137, column 13 to line 137, column 24 in PT2_Task2
+2. Line 138, column 13 to line 147, column 48 in PT2_Task2
+3. Line 142, column 21 to line 147, column 48 in PT2_Task2
+4. Line 142, column 24 to line 145, column 75 in PT2_Task2
+
+
+@!@!@ENDMSG 2103 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2023-03-30 17:41:22
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 72, col 1 to line 72, col 4 of module PT2_Task2>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 9 to line 83, col 23 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_1 line 85, col 1 to line 85, col 5 of module PT2_Task2>: 7:14
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 13 to line 85, col 24 of module PT2_Task2: 46
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 85, col 13 to line 85, col 14 of module PT2_Task2: 32
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 16 to line 86, col 30 of module PT2_Task2: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 24 to line 87, col 48 of module PT2_Task2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 27 to line 88, col 40 of module PT2_Task2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 35 to line 89, col 64 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 35 to line 90, col 82 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 35 to line 93, col 62 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 38 to line 94, col 51 of module PT2_Task2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 46 to line 95, col 75 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 46 to line 96, col 103 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 46 to line 98, col 66 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 46 to line 99, col 75 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 46 to line 100, col 103 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 101, col 46 to line 102, col 66 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 103, col 35 to line 103, col 77 of module PT2_Task2: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 24 to line 104, col 33 of module PT2_Task2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 24 to line 105, col 36 of module PT2_Task2: 12
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 24 to line 106, col 36 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 24 to line 110, col 58 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 111, col 13 to line 111, col 37 of module PT2_Task2: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_2 line 113, col 1 to line 113, col 5 of module PT2_Task2>: 3:6
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 13 to line 113, col 24 of module PT2_Task2: 31
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 113, col 13 to line 113, col 14 of module PT2_Task2: 25
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 16 to line 114, col 30 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 21 to line 117, col 36 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 24 to line 118, col 29 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 24 to line 119, col 36 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 24 to line 120, col 39 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 121, col 13 to line 123, col 37 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_3 line 125, col 1 to line 125, col 5 of module PT2_Task2>: 3:6
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 13 to line 125, col 24 of module PT2_Task2: 28
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 125, col 13 to line 125, col 14 of module PT2_Task2: 22
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 126, col 16 to line 126, col 30 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 127, col 21 to line 129, col 36 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 24 to line 130, col 29 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 24 to line 131, col 36 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 132, col 24 to line 132, col 39 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 133, col 13 to line 135, col 37 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Lbl_4 line 137, col 1 to line 137, col 5 of module PT2_Task2>: 2:4
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 137, col 13 to line 137, col 24 of module PT2_Task2: 23
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 137, col 13 to line 137, col 14 of module PT2_Task2: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 16 to line 138, col 30 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 21 to line 141, col 36 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 142, col 32 to line 143, col 93 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 143, col 36 to line 143, col 93 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 143, col 37 to line 143, col 52 of module PT2_Task2: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 143, col 60 to line 143, col 91 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 142, col 41 to line 142, col 53 of module PT2_Task2: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 146, col 24 to line 146, col 35 of module PT2_Task2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 147, col 24 to line 147, col 48 of module PT2_Task2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 13 to line 150, col 37 of module PT2_Task2: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 153, col 1 to line 153, col 11 of module PT2_Task2>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 153, col 16 to line 153, col 26 of module PT2_Task2: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 153, col 31 to line 153, col 44 of module PT2_Task2: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(16) at 2023-03-30 17:41:22: 16 states generated (525 s/min), 16 distinct states found (525 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+16 states generated, 16 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1836ms at (2023-03-30 17:41:22)
+@!@!@ENDMSG 2186 @!@!@
