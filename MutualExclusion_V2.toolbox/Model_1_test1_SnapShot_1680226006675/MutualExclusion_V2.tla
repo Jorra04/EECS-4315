@@ -4,8 +4,8 @@ CONSTANT Procs
 (*
 --algorithm 1BitProtocol {
     variables flag = [i \in Procs |-> FALSE] ;
-    process (P \in Procs) {
-     ncs: while (TRUE) {
+    fair process (P \in Procs) {
+     ncs: - while (TRUE) {
             skip ; 
      enter: flag[self] := TRUE ; 
         e2: await ~ flag[1 - self] ;
@@ -15,7 +15,7 @@ CONSTANT Procs
   }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "d13d0d69" /\ chksum(tla) = "e0451ba")
+\* BEGIN TRANSLATION (chksum(pcal) = "6d4a9177" /\ chksum(tla) = "42c2ca4c")
 VARIABLES flag, pc
 
 vars == << flag, pc >>
@@ -53,13 +53,23 @@ P(self) == ncs(self) \/ enter(self) \/ e2(self) \/ cs(self) \/ exit(self)
 
 Next == (\E self \in Procs: P(self))
 
-Spec == Init /\ [][Next]_vars
+Spec == /\ Init /\ [][Next]_vars
+        /\ \A self \in Procs : WF_vars((pc[self] # "ncs") /\ P(self))
 
 \* END TRANSLATION 
 \* Invariant1, the Safety property.
 MutualExclusion == (\A i,j \in Procs : (i # j) => ~((pc[i] = "cs")/\(pc[j] = "cs")))
 
+(* the below is for starvation freedom which is added in the properties section of the TLC checker.
+
+StarvationFree == \A i \in Procs : (pc[i] = "enter") ~> (pc[i] = "cs")
+
+\* version 2
+\A i \in Procs : []<>(pc[i] = "cs")
+
+*)
+
 =============================================================================
 \* Modification History
-\* Last modified Thu Mar 30 16:16:02 EDT 2023 by jorra04
+\* Last modified Thu Mar 30 21:25:48 EDT 2023 by jorra04
 \* Created Wed Mar 29 19:31:32 EDT 2023 by jorra04

@@ -4,7 +4,7 @@ CONSTANT Procs
 (*
 --algorithm Alternate {
   variable turn \in Procs;
-  process (p \in Procs) {
+  fair process (p \in Procs) {
     ncs: while (TRUE) {
            skip ;
   enter:   await turn = self ;
@@ -14,7 +14,7 @@ CONSTANT Procs
   }  
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "df287080" /\ chksum(tla) = "812ece42")
+\* BEGIN TRANSLATION (chksum(pcal) = "bd407d75" /\ chksum(tla) = "bcdc4308")
 VARIABLES turn, pc
 
 vars == << turn, pc >>
@@ -48,7 +48,8 @@ p(self) == ncs(self) \/ enter(self) \/ cs(self) \/ exit(self)
 
 Next == (\E self \in Procs: p(self))
 
-Spec == Init /\ [][Next]_vars
+Spec == /\ Init /\ [][Next]_vars
+        /\ \A self \in Procs : WF_vars(p(self))
 
 \* END TRANSLATION 
 
@@ -56,11 +57,19 @@ Spec == Init /\ [][Next]_vars
 \* Invariant1, the Safety property.
 MutualExclusion == (\A i, j \in  Procs : ((i # j) => ~((pc[i] = "cs")/\(pc[j] = "cs"))))
 
-\* Liveness property.
 
-Liveness == \A i \in Procs : []<>(pc[i] = "cs")
+
+(* the below is for starvation freedom which is added in the properties section of the TLC checker.
+
+StarvationFree == \A i \in Procs : (pc[i] = "enter") ~> (pc[i] = "cs")
+
+\* version 2
+\A i \in Procs : []<>(pc[i] = "cs")
+
+*)
+
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Mar 30 16:08:51 EDT 2023 by jorra04
+\* Last modified Thu Mar 30 21:25:36 EDT 2023 by jorra04
 \* Created Wed Mar 29 18:36:15 EDT 2023 by jorra04

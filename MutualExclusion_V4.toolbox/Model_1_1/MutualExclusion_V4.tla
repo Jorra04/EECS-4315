@@ -81,7 +81,16 @@ Spec == Init /\ [][Next]_vars
 \* Invariant1, the Safety property.
 MutualExclusion == (\A i, j \in  Procs : ((i # j) => ~((pc[i] = "cs")/\(pc[j] = "cs"))))
 
+(* the below is for starvation freedom which is added in the properties section of the TLC checker.
+
+StarvationFree == \A i \in Procs : (pc[i] = "enter") ~> (pc[i] = "cs")
+
+\* version 2
+\A i \in Procs : []<>(pc[i] = "cs")
+
+*)
+
 =============================================================================
 \* Modification History
-\* Last modified Thu Mar 30 16:16:24 EDT 2023 by jorra04
+\* Last modified Thu Mar 30 21:26:04 EDT 2023 by jorra04
 \* Created Wed Mar 29 19:52:03 EDT 2023 by jorra04

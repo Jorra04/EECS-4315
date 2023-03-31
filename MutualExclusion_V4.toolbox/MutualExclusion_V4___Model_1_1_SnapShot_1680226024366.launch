@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
-    <stringAttribute key="configurationName" value="Model_1_1"/>
+    <stringAttribute key="configurationName" value="Model_1_1_SnapShot_1680226024366"/>
     <intAttribute key="distributedFPSetCount" value="0"/>
     <stringAttribute key="distributedNetworkInterface" value="130.63.96.82"/>
     <intAttribute key="distributedNodesCount" value="1"/>
