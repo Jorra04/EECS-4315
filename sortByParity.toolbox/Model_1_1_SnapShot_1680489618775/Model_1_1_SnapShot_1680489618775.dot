@@ -1,0 +1,39 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-7938081101384112508 [label="/\\ odds = <<>>\n/\\ evenIndex = 1\n/\\ oddIndex = 1\n/\\ i = 1\n/\\ evens = <<>>\n/\\ pc = \"Lbl_1\"\n/\\ output = <<>>",style = filled]
+-7938081101384112508 -> -2521094061816936978 [label="",color="2",fontcolor="2"];
+-2521094061816936978 [label="/\\ odds = <<>>\n/\\ evenIndex = 1\n/\\ oddIndex = 1\n/\\ i = 2\n/\\ evens = <<4>>\n/\\ pc = \"Lbl_1\"\n/\\ output = <<0>>"];
+-2521094061816936978 -> -2233911406934599743 [label="",color="2",fontcolor="2"];
+-2233911406934599743 [label="/\\ odds = <<>>\n/\\ evenIndex = 1\n/\\ oddIndex = 1\n/\\ i = 3\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_1\"\n/\\ output = <<0, 0>>"];
+-2233911406934599743 -> 2059312045806398146 [label="",color="2",fontcolor="2"];
+2059312045806398146 [label="/\\ odds = <<5>>\n/\\ evenIndex = 1\n/\\ oddIndex = 1\n/\\ i = 4\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_1\"\n/\\ output = <<0, 0, 0>>"];
+2059312045806398146 -> 6732075552711063778 [label="",color="2",fontcolor="2"];
+6732075552711063778 [label="/\\ odds = <<5, 7>>\n/\\ evenIndex = 1\n/\\ oddIndex = 1\n/\\ i = 5\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_1\"\n/\\ output = <<0, 0, 0, 0>>"];
+6732075552711063778 -> 8703354331855379424 [label="",color="2",fontcolor="2"];
+8703354331855379424 [label="/\\ odds = <<5, 7>>\n/\\ evenIndex = 1\n/\\ oddIndex = 1\n/\\ i = 1\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_2\"\n/\\ output = <<0, 0, 0, 0>>"];
+8703354331855379424 -> 3660380199323473231 [label="",color="3",fontcolor="3"];
+3660380199323473231 [label="/\\ odds = <<5, 7>>\n/\\ evenIndex = 2\n/\\ oddIndex = 1\n/\\ i = 2\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_2\"\n/\\ output = <<4, 0, 0, 0>>"];
+3660380199323473231 -> 5247697234332990420 [label="",color="3",fontcolor="3"];
+5247697234332990420 [label="/\\ odds = <<5, 7>>\n/\\ evenIndex = 2\n/\\ oddIndex = 2\n/\\ i = 3\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_2\"\n/\\ output = <<4, 5, 0, 0>>"];
+5247697234332990420 -> -6065843097607875824 [label="",color="3",fontcolor="3"];
+-6065843097607875824 [label="/\\ odds = <<5, 7>>\n/\\ evenIndex = 3\n/\\ oddIndex = 2\n/\\ i = 4\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_2\"\n/\\ output = <<4, 5, 2, 0>>"];
+-6065843097607875824 -> 3875286212058996471 [label="",color="3",fontcolor="3"];
+3875286212058996471 [label="/\\ odds = <<5, 7>>\n/\\ evenIndex = 3\n/\\ oddIndex = 3\n/\\ i = 5\n/\\ evens = <<4, 2>>\n/\\ pc = \"Lbl_2\"\n/\\ output = <<4, 5, 2, 7>>"];
+{rank = same; -7938081101384112508;}
+{rank = same; -2521094061816936978;}
+{rank = same; -2233911406934599743;}
+{rank = same; 2059312045806398146;}
+{rank = same; 6732075552711063778;}
+{rank = same; 8703354331855379424;}
+{rank = same; 3660380199323473231;}
+{rank = same; 5247697234332990420;}
+{rank = same; -6065843097607875824;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+}}

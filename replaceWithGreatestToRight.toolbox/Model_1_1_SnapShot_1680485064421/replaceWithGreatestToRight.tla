@@ -9,7 +9,7 @@ CONSTANT input
     {
         while(i <= Len(input)) {
             j := i + 1;
-            max := -1;
+            max := input[i];
             while(j <= Len(input)) {
                 if(input[j] > max) {
                     max := input[j];
@@ -19,13 +19,11 @@ CONSTANT input
             };
             output := Append(output, max);
             i := i + 1;
-        };
-        
-        assert (\A a \in 1..Len(output) : (\A b \in (a +1)..Len(output) : output[a] >= output[b] ));
+        }
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "42a9654" /\ chksum(tla) = "f752143c")
+\* BEGIN TRANSLATION (chksum(pcal) = "eb8d5b1e" /\ chksum(tla) = "7ee938c5")
 VARIABLES i, j, output, max, pc
 
 vars == << i, j, output, max, pc >>
@@ -40,11 +38,9 @@ Init == (* Global variables *)
 Lbl_1 == /\ pc = "Lbl_1"
          /\ IF i <= Len(input)
                THEN /\ j' = i + 1
-                    /\ max' = -1
+                    /\ max' = input[i]
                     /\ pc' = "Lbl_2"
-               ELSE /\ Assert((\A a \in 1..Len(output) : (\A b \in (a +1)..Len(output) : output[a] >= output[b] )), 
-                              "Failure of assertion at line 24, column 9.")
-                    /\ pc' = "Done"
+               ELSE /\ pc' = "Done"
                     /\ UNCHANGED << j, max >>
          /\ UNCHANGED << i, output >>
 
@@ -76,5 +72,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Apr 02 21:32:18 EDT 2023 by jorra04
+\* Last modified Sun Apr 02 21:23:35 EDT 2023 by jorra04
 \* Created Sun Apr 02 19:58:26 EDT 2023 by jorra04

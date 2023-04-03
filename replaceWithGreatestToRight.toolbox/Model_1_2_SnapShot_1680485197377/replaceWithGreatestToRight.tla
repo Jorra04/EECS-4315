@@ -19,13 +19,11 @@ CONSTANT input
             };
             output := Append(output, max);
             i := i + 1;
-        };
-        
-        assert (\A a \in 1..Len(output) : (\A b \in (a +1)..Len(output) : output[a] >= output[b] ));
+        }
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "42a9654" /\ chksum(tla) = "f752143c")
+\* BEGIN TRANSLATION (chksum(pcal) = "13b4655" /\ chksum(tla) = "6327cedd")
 VARIABLES i, j, output, max, pc
 
 vars == << i, j, output, max, pc >>
@@ -42,9 +40,7 @@ Lbl_1 == /\ pc = "Lbl_1"
                THEN /\ j' = i + 1
                     /\ max' = -1
                     /\ pc' = "Lbl_2"
-               ELSE /\ Assert((\A a \in 1..Len(output) : (\A b \in (a +1)..Len(output) : output[a] >= output[b] )), 
-                              "Failure of assertion at line 24, column 9.")
-                    /\ pc' = "Done"
+               ELSE /\ pc' = "Done"
                     /\ UNCHANGED << j, max >>
          /\ UNCHANGED << i, output >>
 
@@ -76,5 +72,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Sun Apr 02 21:32:18 EDT 2023 by jorra04
+\* Last modified Sun Apr 02 21:25:30 EDT 2023 by jorra04
 \* Created Sun Apr 02 19:58:26 EDT 2023 by jorra04
