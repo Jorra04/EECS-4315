@@ -54,20 +54,24 @@ CONSTANT input
 \*            assert (\A k \in 1..Len(input) :
 \*            (input[k] % 3 = 0) => ((\A l \in 1..k) : (input[l] % 3 = 0))
 \*            ); 
-        assert (\A k \in 1..Len(input) :
-        (output[k] % 3 = 0) => ((\A l \in 1..k : output[l] % 3 = 0))
-        );
-        
-        assert (\A k \in 1..Len(input) :
-        (output[k] % 3 = 1) => ((\A l \in 1..k : ((output[l] % 3 = 0) \/ (output[l] % 3 = 1) )))
-        );
-        assert (\A k \in 1..Len(input) :
-        (output[k] % 3 = 2) => ((\A l \in 1..k : ((output[l] % 3 = 0) \/ (output[l] % 3 = 1) \/ (output[l] % 3 = 2) )))
-        );           
+\*        assert (\A k \in 1..Len(input) :
+\*        (output[k] % 3 = 0) => ((\A l \in 1..k : output[l] % 3 = 0))
+\*        );
+\*        
+\*        assert (\A k \in 1..Len(input) :
+\*        (output[k] % 3 = 1) => ((\A l \in 1..k : ((output[l] % 3 = 0) \/ (output[l] % 3 = 1) )))
+\*        );
+\*        assert (\A k \in 1..Len(input) :
+\*        (output[k] % 3 = 2) => ((\A l \in 1..k : ((output[l] % 3 = 0) \/ (output[l] % 3 = 1) \/ (output[l] % 3 = 2) )))
+\*        );  
+
+\*          assert (\A a \in 1..Len(output) : \E b \in a..Len(output) : (output[b] % 3 # output[a] % 3) => (output[b] % 3 >= output[a] % 3) );         
+    
+           assert(\A a,b \in 1..Len(output) : i < j => output[i] % 3 <= output[j]);
     }
 }
 *)
-\* BEGIN TRANSLATION (chksum(pcal) = "3cb77205" /\ chksum(tla) = "3bf03223")
+\* BEGIN TRANSLATION (chksum(pcal) = "abd0012c" /\ chksum(tla) = "2bb7f090")
 VARIABLES numberOfMultiplesOf3, numberOfMultiplesOf3Plus1, 
           numberOfMultiplesOf3Plus2, temp0, temp1, temp2, output, i, 
           remainder, j, pc
@@ -146,18 +150,8 @@ Lbl_4 == /\ pc = "Lbl_4"
                THEN /\ output' = output \o <<temp2[j]>>
                     /\ j' = j + 1
                     /\ pc' = "Lbl_4"
-               ELSE /\ Assert(       (\A k \in 1..Len(input) :
-                              (output[k] % 3 = 0) => ((\A l \in 1..k : output[l] % 3 = 0))
-                              ), 
-                              "Failure of assertion at line 57, column 9.")
-                    /\ Assert(       (\A k \in 1..Len(input) :
-                              (output[k] % 3 = 1) => ((\A l \in 1..k : ((output[l] % 3 = 0) \/ (output[l] % 3 = 1) )))
-                              ), 
-                              "Failure of assertion at line 61, column 9.")
-                    /\ Assert(       (\A k \in 1..Len(input) :
-                              (output[k] % 3 = 2) => ((\A l \in 1..k : ((output[l] % 3 = 0) \/ (output[l] % 3 = 1) \/ (output[l] % 3 = 2) )))
-                              ), 
-                              "Failure of assertion at line 64, column 9.")
+               ELSE /\ Assert((\A a,b \in 1..Len(output) : i < j => output[i] % 3 <= output[j]), 
+                              "Failure of assertion at line 70, column 12.")
                     /\ pc' = "Done"
                     /\ UNCHANGED << output, j >>
          /\ UNCHANGED << numberOfMultiplesOf3, numberOfMultiplesOf3Plus1, 
@@ -178,5 +172,5 @@ Termination == <>(pc = "Done")
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Mar 30 17:48:23 EDT 2023 by jorra04
+\* Last modified Sat Apr 01 22:25:14 EDT 2023 by jorra04
 \* Created Thu Mar 30 17:19:39 EDT 2023 by jorra04

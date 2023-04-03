@@ -2,7 +2,7 @@
 TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 18 and seed -6484400254287735676 with 6 workers on 12 cores with 2315MB heap and 5206MB offheap memory [pid: 94386] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 70 and seed -1055934534077036486 with 6 workers on 12 cores with 2315MB heap and 5206MB offheap memory [pid: 95995] (Linux 4.18.0-425.3.1.el8.x86_64 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -25,13 +25,13 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2023-03-30 21:26:54)
+Starting... (2023-03-30 21:32:48)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2023-03-30 21:26:55.
+Finished computing initial states: 1 distinct state generated at 2023-03-30 21:32:49.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
@@ -40,7 +40,7 @@ Model checking completed. No error has been found.
   calculated (optimistic):  val = 5.7E-17
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2023-03-30 21:26:55
+The coverage statistics at 2023-03-30 21:32:49
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
 <Init line 26, col 1 to line 26, col 4 of module MutualExclusion_V3>: 1:1
@@ -49,7 +49,7 @@ The coverage statistics at 2023-03-30 21:26:55
   line 27, col 9 to line 28, col 44 of module MutualExclusion_V3: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<ncs line 30, col 1 to line 30, col 9 of module MutualExclusion_V3>: 4:12
+<ncs line 30, col 1 to line 30, col 9 of module MutualExclusion_V3>: 3:12
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 30, col 17 to line 30, col 32 of module MutualExclusion_V3: 76
@@ -67,7 +67,7 @@ The coverage statistics at 2023-03-30 21:26:55
   line 33, col 17 to line 33, col 28 of module MutualExclusion_V3: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<enter line 35, col 1 to line 35, col 11 of module MutualExclusion_V3>: 9:12
+<enter line 35, col 1 to line 35, col 11 of module MutualExclusion_V3>: 8:12
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 35, col 19 to line 35, col 36 of module MutualExclusion_V3: 76
@@ -82,7 +82,7 @@ The coverage statistics at 2023-03-30 21:26:55
   line 37, col 19 to line 37, col 50 of module MutualExclusion_V3: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<e2 line 39, col 1 to line 39, col 8 of module MutualExclusion_V3>: 9:12
+<e2 line 39, col 1 to line 39, col 8 of module MutualExclusion_V3>: 10:12
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 39, col 16 to line 39, col 30 of module MutualExclusion_V3: 76
@@ -118,7 +118,7 @@ The coverage statistics at 2023-03-30 21:26:55
   line 47, col 16 to line 47, col 50 of module MutualExclusion_V3: 12
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<cs line 49, col 1 to line 49, col 8 of module MutualExclusion_V3>: 5:8
+<cs line 49, col 1 to line 49, col 8 of module MutualExclusion_V3>: 6:8
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
   line 49, col 16 to line 49, col 30 of module MutualExclusion_V3: 72
@@ -181,7 +181,7 @@ The coverage statistics at 2023-03-30 21:26:55
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2023-03-30 21:26:55: 65 states generated (2,704 s/min), 32 distinct states found (1,331 ds/min), 0 states left on queue.
+Progress(9) at 2023-03-30 21:32:49: 65 states generated (2,805 s/min), 32 distinct states found (1,381 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 65 states generated, 32 distinct states found, 0 states left on queue.
@@ -193,5 +193,5 @@ The depth of the complete state graph search is 9.
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1456ms at (2023-03-30 21:26:55)
+Finished in 1402ms at (2023-03-30 21:32:49)
 @!@!@ENDMSG 2186 @!@!@

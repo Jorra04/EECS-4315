@@ -92,5 +92,5 @@ StarvationFree == \A i \in Procs : (pc[i] = "enter") ~> (pc[i] = "cs")
 
 =============================================================================
 \* Modification History
-\* Last modified Thu Mar 30 21:26:04 EDT 2023 by jorra04
+\* Last modified Thu Mar 30 21:32:24 EDT 2023 by jorra04
 \* Created Wed Mar 29 19:52:03 EDT 2023 by jorra04

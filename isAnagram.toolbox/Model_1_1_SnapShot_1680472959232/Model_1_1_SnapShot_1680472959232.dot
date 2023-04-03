@@ -1,0 +1,61 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-9086819264945852318 [label="/\\ i = 1\n/\\ j = 1\n/\\ set = {}\n/\\ pc = \"Lbl_1\"\n/\\ output = TRUE",style = filled]
+-9086819264945852318 -> -8639377960366893720 [label="",color="2",fontcolor="2"];
+-8639377960366893720 [label="/\\ i = 1\n/\\ j = 1\n/\\ set = {}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+-8639377960366893720 -> -3853374576119339121 [label="",color="3",fontcolor="3"];
+-3853374576119339121 [label="/\\ i = 2\n/\\ j = 1\n/\\ set = {1}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+-3853374576119339121 -> 5752982103268531884 [label="",color="3",fontcolor="3"];
+5752982103268531884 [label="/\\ i = 3\n/\\ j = 1\n/\\ set = {1, 2}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+5752982103268531884 -> -4512235101248824418 [label="",color="3",fontcolor="3"];
+-4512235101248824418 [label="/\\ i = 4\n/\\ j = 1\n/\\ set = {1, 2, 3}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+-4512235101248824418 -> 4671600827001603425 [label="",color="3",fontcolor="3"];
+4671600827001603425 [label="/\\ i = 5\n/\\ j = 1\n/\\ set = {1, 2, 3, 4}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+4671600827001603425 -> -1762712678766691802 [label="",color="3",fontcolor="3"];
+-1762712678766691802 [label="/\\ i = 6\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+-1762712678766691802 -> 8620922226278156967 [label="",color="3",fontcolor="3"];
+8620922226278156967 [label="/\\ i = 7\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+8620922226278156967 -> -4485186295752680949 [label="",color="3",fontcolor="3"];
+-4485186295752680949 [label="/\\ i = 1\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+-4485186295752680949 -> 1187188467775117355 [label="",color="4",fontcolor="4"];
+1187188467775117355 [label="/\\ i = 2\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+1187188467775117355 -> 6850521098260584907 [label="",color="4",fontcolor="4"];
+6850521098260584907 [label="/\\ i = 3\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+6850521098260584907 -> 2913049632443895924 [label="",color="4",fontcolor="4"];
+2913049632443895924 [label="/\\ i = 4\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+2913049632443895924 -> 7423469368961372564 [label="",color="4",fontcolor="4"];
+7423469368961372564 [label="/\\ i = 5\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+7423469368961372564 -> -5278885876440198220 [label="",color="4",fontcolor="4"];
+-5278885876440198220 [label="/\\ i = 6\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+-5278885876440198220 -> -444188987414965676 [label="",color="4",fontcolor="4"];
+-444188987414965676 [label="/\\ i = 7\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+-444188987414965676 -> 5466024625909627822 [label="",color="4",fontcolor="4"];
+5466024625909627822 [label="/\\ i = 7\n/\\ j = 1\n/\\ set = {1, 2, 3, 4, 5, 6}\n/\\ pc = \"Done\"\n/\\ output = TRUE"];
+5466024625909627822 -> 5466024625909627822 [label="",color="5",fontcolor="5"];
+{rank = same; -9086819264945852318;}
+{rank = same; -8639377960366893720;}
+{rank = same; -3853374576119339121;}
+{rank = same; 5752982103268531884;}
+{rank = same; -4512235101248824418;}
+{rank = same; 4671600827001603425;}
+{rank = same; -1762712678766691802;}
+{rank = same; 8620922226278156967;}
+{rank = same; -4485186295752680949;}
+{rank = same; 1187188467775117355;}
+{rank = same; 6850521098260584907;}
+{rank = same; 2913049632443895924;}
+{rank = same; 7423469368961372564;}
+{rank = same; -5278885876440198220;}
+{rank = same; -444188987414965676;}
+{rank = same; 5466024625909627822;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=5]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+Lbl_3 [label="Lbl_3",fillcolor=4]
+}}
