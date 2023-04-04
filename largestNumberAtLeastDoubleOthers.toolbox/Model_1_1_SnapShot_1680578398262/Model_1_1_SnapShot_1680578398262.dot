@@ -1,0 +1,43 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+1877340266779865112 [label="/\\ i = 1\n/\\ pc = \"Lbl_1\"\n/\\ max = -1\n/\\ output = TRUE\n/\\ indexFound = 1",style = filled]
+1877340266779865112 -> -5243583013633114909 [label="",color="2",fontcolor="2"];
+-5243583013633114909 [label="/\\ i = 1\n/\\ pc = \"Lbl_2\"\n/\\ max = 3\n/\\ output = TRUE\n/\\ indexFound = 1"];
+-5243583013633114909 -> -1921851778823899806 [label="",color="3",fontcolor="3"];
+-1921851778823899806 [label="/\\ i = 2\n/\\ pc = \"Lbl_2\"\n/\\ max = 3\n/\\ output = TRUE\n/\\ indexFound = 1"];
+-1921851778823899806 -> 3216372635187758387 [label="",color="3",fontcolor="3"];
+3216372635187758387 [label="/\\ i = 3\n/\\ pc = \"Lbl_2\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+3216372635187758387 -> 8913529874469095889 [label="",color="3",fontcolor="3"];
+8913529874469095889 [label="/\\ i = 4\n/\\ pc = \"Lbl_2\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+8913529874469095889 -> -8611823482426599887 [label="",color="3",fontcolor="3"];
+-8611823482426599887 [label="/\\ i = 5\n/\\ pc = \"Lbl_2\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+-8611823482426599887 -> 7448418175445095131 [label="",color="3",fontcolor="3"];
+7448418175445095131 [label="/\\ i = 1\n/\\ pc = \"Lbl_3\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+7448418175445095131 -> 3832880111018335066 [label="",color="4",fontcolor="4"];
+3832880111018335066 [label="/\\ i = 2\n/\\ pc = \"Lbl_3\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+3832880111018335066 -> -4107652033524267846 [label="",color="4",fontcolor="4"];
+-4107652033524267846 [label="/\\ i = 3\n/\\ pc = \"Lbl_3\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+-4107652033524267846 -> -7931030455722751912 [label="",color="4",fontcolor="4"];
+-7931030455722751912 [label="/\\ i = 4\n/\\ pc = \"Lbl_3\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+-7931030455722751912 -> 7070864480998987704 [label="",color="4",fontcolor="4"];
+7070864480998987704 [label="/\\ i = 5\n/\\ pc = \"Lbl_3\"\n/\\ max = 6\n/\\ output = TRUE\n/\\ indexFound = 2"];
+{rank = same; 1877340266779865112;}
+{rank = same; -5243583013633114909;}
+{rank = same; -1921851778823899806;}
+{rank = same; 3216372635187758387;}
+{rank = same; 8913529874469095889;}
+{rank = same; -8611823482426599887;}
+{rank = same; 7448418175445095131;}
+{rank = same; 3832880111018335066;}
+{rank = same; -4107652033524267846;}
+{rank = same; -7931030455722751912;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+Lbl_3 [label="Lbl_3",fillcolor=4]
+}}

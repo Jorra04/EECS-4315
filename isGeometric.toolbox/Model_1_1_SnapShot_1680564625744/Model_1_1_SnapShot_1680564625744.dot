@@ -1,0 +1,34 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+4990790161768248658 [label="/\\ i = 3\n/\\ geoCoeff = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = TRUE",style = filled]
+4990790161768248658 -> -5822510151687466406 [label="",color="2",fontcolor="2"];
+-5822510151687466406 [label="/\\ i = 3\n/\\ geoCoeff = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+-5822510151687466406 -> 1868569064994348617 [label="",color="3",fontcolor="3"];
+1868569064994348617 [label="/\\ i = 4\n/\\ geoCoeff = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+1868569064994348617 -> 2674201454871256212 [label="",color="3",fontcolor="3"];
+2674201454871256212 [label="/\\ i = 5\n/\\ geoCoeff = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+2674201454871256212 -> 6920870331155520499 [label="",color="3",fontcolor="3"];
+6920870331155520499 [label="/\\ i = 6\n/\\ geoCoeff = 3\n/\\ pc = \"Lbl_2\"\n/\\ output = TRUE"];
+6920870331155520499 -> -5473360126582380861 [label="",color="3",fontcolor="3"];
+-5473360126582380861 [label="/\\ i = 6\n/\\ geoCoeff = 3\n/\\ pc = \"Lbl_3\"\n/\\ output = TRUE"];
+-5473360126582380861 -> -826254048285461365 [label="",color="4",fontcolor="4"];
+-826254048285461365 [label="/\\ i = 6\n/\\ geoCoeff = 3\n/\\ pc = \"Done\"\n/\\ output = TRUE"];
+-826254048285461365 -> -826254048285461365 [label="",color="5",fontcolor="5"];
+{rank = same; 4990790161768248658;}
+{rank = same; -5822510151687466406;}
+{rank = same; 1868569064994348617;}
+{rank = same; 2674201454871256212;}
+{rank = same; 6920870331155520499;}
+{rank = same; -5473360126582380861;}
+{rank = same; -826254048285461365;}
+}
+subgraph cluster_legend {graph[style=bold];label = "Next State Actions" style="solid"
+node [ labeljust="l",colorscheme="paired12",style=filled,shape=record ]
+Terminating [label="Terminating",fillcolor=5]
+Lbl_2 [label="Lbl_2",fillcolor=3]
+Lbl_1 [label="Lbl_1",fillcolor=2]
+Lbl_3 [label="Lbl_3",fillcolor=4]
+}}

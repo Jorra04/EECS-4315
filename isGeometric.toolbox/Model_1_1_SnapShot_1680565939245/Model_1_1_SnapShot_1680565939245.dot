@@ -1,0 +1,9 @@
+strict digraph DiskGraph {
+edge [colorscheme="paired12"]
+nodesep=0.35;
+subgraph cluster_graph {
+color="white";
+-6773062682623102774 [label="/\\ i = 3\n/\\ geoCoeff = 1\n/\\ pc = \"Lbl_1\"\n/\\ output = TRUE",style = filled]
+{rank = same; -6773062682623102774;}
+}
+}
